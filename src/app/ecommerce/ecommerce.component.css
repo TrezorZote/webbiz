@@ -1,9 +1,20 @@
+
+:root {
+  --primary-color: #361500;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comforter+Brush&family=Monoton&family=Road+Rage&family=Style+Script&family=Vesper+Libre&display=swap');
+section.marketing {
+  background: white;
+  margin: .5em .5em .5em .5em;
+  box-shadow: 0 0 1rem 0 #361500;
+  border-radius: 8px;
+}
 
 section.marketing p  {
-  padding: 1em;
+  padding: 2em;
   text-align: center;
   margin: 1em .9em auto .2em;
   font-family: 'Poppins';
@@ -35,7 +46,7 @@ h4{
   text-align: center;
   padding-left: .5em;
   margin: -2.5em auto 1em -.5em;
-  color: #361500;
+  color: black;
   font-size: 1.25em;
   font-family: 'Trebuchet MS';
 }
@@ -45,13 +56,25 @@ h4{
   cursor: pointer;
 }
 
+.sell{
+  background-color: chocolate;
+  border-radius: 100%;
+  box-shadow: 0 .1rem .5rem 0 orange;
+  width: 1.8em;
+  height: 1.8em;
+  cursor: pointer;
+}
+.sell:hover{
+  background-color: orange;
+ 
+}
 
 .mark label {
   display: block;
   margin-top: 1em;
   margin-bottom: 0;
   font-weight: bold;
-  color:#361500 ;
+  color:black;
   font-family: 'Poppins';
 }
 
@@ -60,7 +83,7 @@ h4{
 }
 
 .mark input{
-  border-bottom: 3px solid #361500;
+  border-bottom: 3px solid black;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -173,55 +196,70 @@ section.contact-right iframe {
   margin-left: .5em;
 
 }
+.loco{
+  width: 1.3em;
+  height: 1.3em;
+  margin-top: -0.5em;
+}
 
+.event{
+  
+  object-fit: contain;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 100%;
+}
 .logoss{
   align-self: center;
 display: grid;
-grid-template-columns: 23% 22% 22% 19% 22% ;
+grid-template-columns: 23% 22% 22% 22% 22% ;
 }
 .clothLogo{
-  box-shadow: 0 0 0 .3rem #361500;
-  background-color: #361500;
+  background-color: orange;
   border-radius: 100%;
-  width: 1.95em;
-  height: 1.95em;
-  margin-left: 1.25em;
+  box-shadow: 0 .1rem .5rem 0 orange;
+  width: 1.8em;
+  height: 1.8em;
+  margin-left: 1em;
  margin-top: 2em;
 }
 
 .laptopSell{
-  background-color: #361500;
-  box-shadow: 0 0 0 .3rem #361500;
+  background-color: orange;
   border-radius: 100%;
-  width: 1.9em;
-  height: 1.9em;
+  box-shadow: 0 .1rem .5rem 0 orange;
+  width: 1.7em;
+  height: 1.7em;
   margin-top: 2em;
 }
 
 .phoneSell{
-  width: 2.15em;
-  height: 2.15em;
-  margin-top: 2em ;
-  
+  background-color: orange;
+  border-radius: 100%;
+  box-shadow: 0 .1rem .5rem 0 orange;
+  width: 2em;
+  height: 2em;
+  margin-top: 2em;
 }
 
 .carLogo{
-  box-shadow: 0 0 0 .3rem #361500;
-  background-color: #361500;
+  background-color: orange;
   border-radius: 100%;
+  box-shadow: 0 .1rem .5rem 0 orange;
   width: 2em;
   height: 2em;
   margin-top: 2em;
 }
 
 .houseLogo{
-  box-shadow: 0 0 0 .3rem #361500;
-  background-color: #361500;
+  background-color: orange;
   border-radius: 100%;
-  width: 1.95em;
-  height: 1.95em;
+  box-shadow: 0 .1rem .5rem 0 orange;
+  width: 1.8em;
+  height: 1.8em;
   margin-top: 2em;
 }
+
 
 
 .nameSearch{
@@ -233,7 +271,7 @@ grid-template-columns: 23% 22% 22% 19% 22% ;
     height: 2.75em;
     border: none;
     background-color: whitesmoke;
-    box-shadow: 0 0 .6rem 0 #361500;
+    box-shadow: 0 .1rem .4rem 0 black;
     font-family: 'Trebuchet MS';
     font-size: 1.05em;
     text-align: center;
@@ -256,11 +294,14 @@ grid-template-columns: 23% 22% 22% 19% 22% ;
 .item-card-part1{
 margin: .8em auto .4em .20em;
  border-radius: 8px;
- box-shadow: 0 .3rem .4rem 0 #361500;
+ box-shadow: 0 .3rem .4rem 0 black;
  width: 98%;
  height: 24.8em;
 display: inline-block;
-background-color: #361500;
+background-image: url('https://img.freepik.com/free-vector/square-patterned-background_53876-93497.jpg?size=626&ext=jpg&uid=R89165474&ga=GA1.1.761342888.1672160419&semt=ais');
+background-position:92% 200%;
+background-size: contain;
+
 }
 
 .item-rounded-image{
@@ -277,7 +318,7 @@ background-color: #361500;
    font-size: .85em;
     margin-left: -1.8em;
     margin-top: .5em;
-    color:chocolate;
+    color:rgb(200, 172, 130);
     font-family: 'Comfortaa';
     letter-spacing: .07em;
     
@@ -285,7 +326,7 @@ background-color: #361500;
 
 .spa{
   font-family: 'comfortaa';
-    color:peachpuff;
+    color:rgb(168, 167, 167);
   font-size: 1.05em;
   font-weight: bolder;
 }
@@ -304,7 +345,7 @@ background-color: #361500;
   margin-right: .45em;
   cursor: pointer;
   z-index: 855;
-  background-color:chocolate;
+  background-color:rgb(201, 161, 133);
   border-radius: 12px;
   box-shadow: 0 .1rem .3rem 0 black;
  
@@ -395,7 +436,7 @@ body {
 }
 
 .navbar .navbar-logo span {
-  color: beige;
+  color: white;
   font-weight: bold;
 }
 
@@ -416,7 +457,7 @@ nav {
   right: 0;
   top:0;
   background-color: rgba(255, 255, 255, 0.972);
-  height: 18em;
+  height: 13em;
   padding: 1em;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -484,9 +525,8 @@ nav .navbar-menu a {
   }
   .navbar {
     position:-webkit-sticky;
-    
     background-color:black;
-    box-shadow: 0 0 .5rem 0 #361500;
+    box-shadow: 0 0 .5rem 0 white;
   }
   .navbar .navbar-logo span {
     color: chocolate; 
@@ -532,7 +572,7 @@ nav .navbar-menu a {
     font-weight: 300;
     font-size: 1.1em;
     float: right;
-    font-family:'trebuchet MS';
+    font-family:'Trebuchet MS';
     margin-right: 4em;
     margin-top: .8em;
     border-bottom: none;
@@ -547,14 +587,50 @@ nav .navbar-menu a {
   }
   
 nav .navbar-menu a:hover {
-  border-bottom: 2px solid chocolate;
-
+border-bottom: 2px solid chocolate;
 }
   .locationLogo{
    display: none;
   }
 }
 @media only screen and (min-width: 690px) {
+
+
+  section.marketing{
+    box-shadow: none;
+  }
+
+.grid{
+  background-color: rgb(7, 7, 7);
+ display: flex;
+  align-items: center;
+ justify-content: center;
+}
+  section.marketing p{
+    font-size: 110%;
+   margin-right: -1em;
+   width: 75%;
+   float: right;
+   color: rgb(255, 255, 255);
+   border: none;
+   box-shadow: none;
+  }
+
+  .p{
+    margin-top: 0%;
+    
+  }
+  .event{
+    border-radius: 0px;
+    width: 150%;
+    margin-left: .5em;
+    margin-top: .3em;
+    margin-bottom: .3em;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 .3rem 0 rgba(245, 222, 179, 0.686);
+  }
+ 
   .cards{ 
       display: grid;
         grid-template-columns:325px  auto;
@@ -625,14 +701,8 @@ nav .navbar-menu a:hover {
 }
 
 .footer-section{
-  position: fixed;
-  width: 100%;
   background-color: #151414;
   padding: 1em;
-  margin: auto 0;
-  bottom: 0;
-  z-index: -1;
-  
 }
 .footer-section span{
  color: rgb(138, 138, 138);
@@ -642,3 +712,5 @@ nav .navbar-menu a:hover {
  border-bottom: -2em;
  color:rgb(100, 100, 100); 
 }
+
+ 

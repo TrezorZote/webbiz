@@ -1,15 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comforter+Brush&family=Monoton&family=Road+Rage&family=Style+Script&family=Vesper+Libre&display=swap');
+section.marketing {
+  background: white;
+  margin: .5em .5em .5em .5em;
+  box-shadow: 0 0 1rem 0 #361500;
+  border-radius: 8px;
+}
 
 section.marketing p  {
-  padding: 1em;
+  padding: 2em;
   text-align: center;
-  margin: 1em .9em auto .2em;
+  margin: 1em .9em auto 1em;
   font-family: 'Poppins';
   font-weight: 900;
   font-size: 1.05em;
-  color: black;
+  color: rgb(51, 51, 51);
 }
 
 h4{ 
@@ -35,7 +41,7 @@ h4{
   text-align: center;
   padding-left: .5em;
   margin: -2.5em auto 1em -.5em;
-  color: #361500;
+  color: black;
   font-size: 1.25em;
   font-family: 'Trebuchet MS';
 }
@@ -45,13 +51,26 @@ h4{
   cursor: pointer;
 }
 
+.sell{
+  background-color: olivedrab;
+  border-radius: 100%;
+  box-shadow: 0 .1rem .5rem 0 white;
+  width: 1.7em;
+  height: 1.7em;
+  cursor: pointer;
+}
+.sell:hover{
+  background-color: orange;
+
+}
+
 
 .mark label {
   display: block;
   margin-top: 1em;
   margin-bottom: 0;
   font-weight: bold;
-  color:#361500 ;
+  color:black ;
   font-family: 'Poppins';
 }
 
@@ -60,7 +79,7 @@ h4{
 }
 
 .mark input{
-  border-bottom: 3px solid #361500;
+  border-bottom: 3px solid black;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -177,51 +196,55 @@ section.contact-right iframe {
 .logoss{
   align-self: center;
 display: grid;
-grid-template-columns: 23% 22% 22% 19% 22% ;
+grid-template-columns: 22% 22% 22% 22% 22% ;
 }
 .clothLogo{
-  box-shadow: 0 0 0 .3rem #361500;
-  background-color: #361500;
   border-radius: 100%;
-  width: 1.95em;
-  height: 1.95em;
-  margin-left: 1.25em;
+  box-shadow: 0 0 .5rem 0 #361500;
+  background-color: #361500;
+  width: 1.8em;
+  height: 1.8em;
+  margin-left: .65em;
  margin-top: 2em;
 }
 
 .laptopSell{
-  background-color: #361500;
-  box-shadow: 0 0 0 .3rem #361500;
   border-radius: 100%;
-  width: 1.9em;
-  height: 1.9em;
+  box-shadow: 0 0 .5rem 0 #361500;
+  background-color: #361500;
+  width: 1.8em;
+  height: 1.8em;
   margin-top: 2em;
 }
 
 .phoneSell{
-  width: 2.15em;
-  height: 2.15em;
-  margin-top: 2em ;
-  
+  border-radius: 100%;
+  box-shadow: 0 0 .5rem 0 #361500;
+  background-color: #361500;
+  width: 2em;
+  height: 2em;
+  margin-top: 2em;
 }
 
+
 .carLogo{
-  box-shadow: 0 0 0 .3rem #361500;
-  background-color: #361500;
   border-radius: 100%;
+  box-shadow: 0 0 .5rem 0 #361500;
+  background-color: #361500;
   width: 2em;
   height: 2em;
   margin-top: 2em;
 }
 
 .houseLogo{
-  box-shadow: 0 0 0 .3rem #361500;
-  background-color: #361500;
   border-radius: 100%;
-  width: 1.95em;
-  height: 1.95em;
+  box-shadow: 0 0 .5rem 0 #361500;
+  background-color: #361500;
+  width: 1.9em;
+  height: 1.9em;
   margin-top: 2em;
 }
+
 
 
 .nameSearch{
@@ -233,7 +256,7 @@ grid-template-columns: 23% 22% 22% 19% 22% ;
     height: 2.75em;
     border: none;
     background-color: whitesmoke;
-    box-shadow: 0 0 .6rem 0 #361500;
+    box-shadow: 0 .1rem .5rem 0 black;
     font-family: 'Trebuchet MS';
     font-size: 1.05em;
     text-align: center;
@@ -256,13 +279,20 @@ grid-template-columns: 23% 22% 22% 19% 22% ;
 .item-card-part1{
 margin: .8em auto .4em .20em;
  border-radius: 8px;
- box-shadow: 0 .3rem .4rem 0 #361500;
+ box-shadow: 0 .3rem .4rem 0 black;
  width: 98%;
- height: 24.8em;
+ height: 24.5em;
 display: inline-block;
-background-color: #361500;
+background-image: url('https://media.discordapp.net/attachments/1008571146465193994/1059206641712644256/banga237_create_logos_of_these_words_Vishal_Bhosale_by_using_al_0dc38c2d-4d0f-4307-ad79-257b79e26d38.png?width=561&height=561');
+background-position:82% -155%;
 }
 
+
+.loco{
+  width: 1.3em;
+  height: 1.3em;
+  margin-top: -0.5em;
+}
 .item-rounded-image{
   object-fit: contain;
   width: 100%;
@@ -270,6 +300,13 @@ background-color: #361500;
    margin: .25em .25em .5em 0;
 }
 
+.event{
+  
+  object-fit: contain;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 100%;
+}
 
 .items-attributes {
     list-style-type: none;
@@ -285,7 +322,7 @@ background-color: #361500;
 
 .spa{
   font-family: 'comfortaa';
-    color:peachpuff;
+    color:black;
   font-size: 1.05em;
   font-weight: bolder;
 }
@@ -306,7 +343,7 @@ background-color: #361500;
   z-index: 855;
   background-color:chocolate;
   border-radius: 12px;
-  box-shadow: 0 .1rem .3rem 0 black;
+  box-shadow: 0 .05rem .05rem 0 chocolate;
  
 }.deleteItemLogo:hover{
   width: 1.6em;
@@ -395,7 +432,7 @@ body {
 }
 
 .navbar .navbar-logo span {
-  color: beige;
+  color: peachpuff;
   font-weight: bold;
 }
 
@@ -416,7 +453,7 @@ nav {
   right: 0;
   top:0;
   background-color: rgba(255, 255, 255, 0.972);
-  height: 18em;
+  height: 13em;
   padding: 1em;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -479,14 +516,16 @@ nav .navbar-menu a {
 
 
 @media only screen and (min-width: 640px) {
+
+ 
+
   .menu-btn, .exit-btn {
     display: none;
   }
   .navbar {
     position:-webkit-sticky;
-    
     background-color:black;
-    box-shadow: 0 0 .5rem 0 #361500;
+    box-shadow: 0 0 .1rem 0 white;
   }
   .navbar .navbar-logo span {
     color: chocolate; 
@@ -532,7 +571,7 @@ nav .navbar-menu a {
     font-weight: 300;
     font-size: 1.1em;
     float: right;
-    font-family:'trebuchet MS';
+    font-family:'Trebuchet MS';
     margin-right: 4em;
     margin-top: .8em;
     border-bottom: none;
@@ -542,19 +581,56 @@ nav .navbar-menu a {
   }
   
   nav ul.navbar-menu a {
+  
     text-decoration: none;
     color: white;
+    
   }
   
 nav .navbar-menu a:hover {
   border-bottom: 2px solid chocolate;
-
 }
   .locationLogo{
    display: none;
   }
 }
 @media only screen and (min-width: 690px) {
+
+  section.marketing{
+    box-shadow: none;
+  }
+
+.grid{
+  background-color: rgb(7, 7, 7);
+ display: flex;
+  align-items: center;
+ justify-content: center;
+}
+  section.marketing p{
+    font-size: 110%;
+   margin-right: -1em;
+   width: 75%;
+   float: right;
+   color: rgb(255, 255, 255);
+   border: none;
+   box-shadow: none;
+  }
+
+  .p{
+    margin-top: 0%;
+    
+  }
+  .event{
+    border-radius: 0px;
+    width: 150%;
+    margin-left: .5em;
+    margin-top: .3em;
+    margin-bottom: .3em;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 .3rem 0 rgba(245, 222, 179, 0.686);
+  }
+ 
   .cards{ 
       display: grid;
         grid-template-columns:325px  auto;
@@ -564,6 +640,10 @@ nav .navbar-menu a:hover {
      }
   }
 @media only screen and (min-width: 1015px) {
+
+  
+
+ 
 .cards{ 
     display: grid;
       grid-template-columns:325px 325px auto;
@@ -625,14 +705,8 @@ nav .navbar-menu a:hover {
 }
 
 .footer-section{
-  position: fixed;
-  width: 100%;
   background-color: #151414;
   padding: 1em;
-  margin: auto 0;
-  bottom: 0;
-  z-index: -1;
-  
 }
 .footer-section span{
  color: rgb(138, 138, 138);

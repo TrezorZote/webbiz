@@ -1,0 +1,211 @@
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="workers.component.css">
+  <script src="menu.js"></script>
+
+<body id="markSec">
+
+<br>
+<section class="marketing">
+  <div class="grid">
+    <div>
+    <img class="event" src="https://t3.ftcdn.net/jpg/01/96/04/22/240_F_196042217_2dFX0v2TnKGF91FRBmqlZ67hHiIAgFHY.jpg" alt="">
+  </div>
+  <div class="logoss">
+    <img class="clothLogo" src="https://cdn-icons-png.flaticon.com/128/7829/7829198.png" alt="">
+     <img class="houseLogo" src="https://cdn-icons-png.flaticon.com/128/921/921356.png" alt="">
+     <img class="phoneSell" src="https://cdn-icons-png.flaticon.com/128/2640/2640788.png" alt="">
+     <img class="carLogo"  src="https://cdn-icons-png.flaticon.com/128/2108/2108625.png" alt="">
+     <img class="laptopSell" src="https://cdn-icons-png.flaticon.com/128/8955/8955083.png" alt="">
+   </div>
+   <div class="p">
+<P> This is an example of a Worker<sup>WebApp</sup> 
+   where you could create a profile and make yourself available for job opportunities.
+   click on this plus button to create a profile.
+   <img (click)="onOpenModal('create')" class="sell"   src="https://cdn-icons-png.flaticon.com/128/5176/5176373.png"  alt=""> 
+   <br>
+   Here you can search for different Workers by entering professions
+Inorder to get Your profile enter your Phone number in the search area below.
+</P>
+</div>
+  </div>
+<form>
+<input type="search" (ngModelChange)="searchWorker(key.value)" #key="ngModel" ngModel  name="key" id="searchName" class="nameSearch" placeholder="enter Category or Phone#"><img class="searchIcon" src="https://t3.ftcdn.net/jpg/00/83/10/90/240_F_83109078_BOS0Wxe3v1slxIprmr3VK6HDBBrnsArt.jpg" alt="">
+</form>
+<div *ngIf="workersArray?.length==0" class="noItems">
+<div class="alerter" role="alert">
+<h4 class="alerter" >No Worker Found!</h4>
+</div>
+</div>
+
+<br>
+   
+<!--card section-->  
+   
+    <section class="cards" id="main-container">
+      <div *ngFor="let worker of workersArray"   class="item-container1">
+          <div class="item-row">
+            <div class="item-column1">
+              <div class="item-card-part1">
+                <div id="carouselExampleSlidesOnly" data-bs-ride="carousel"  class="carousel slide" >
+                <div class="carousel-inner" style="background-color: rgb(255, 255, 255);  height: 16em;" role="listbox" >
+                  <div class="carousel-item active">
+                    <img class="item-rounded-image"  src="https://img.freepik.com/free-photo/focused-young-photographer-is-taking-photo-dark-grunge-background_613910-12964.jpg?size=626&ext=jpg&uid=R89165474&ga=GA1.1.761342888.1672160419&semt=ais" alt="">
+                  </div>
+                  <div  class="carousel-item" >
+                    <img class="item-rounded-image"  src="https://img.freepik.com/free-photo/focused-young-photographer-is-taking-photo-dark-grunge-background_613910-12964.jpg?size=626&ext=jpg&uid=R89165474&ga=GA1.1.761342888.1672160419&semt=ais" alt="">
+                  </div>
+                  <div *ngIf="worker.contact!==null"  class="carousel-item">
+                    <img class="item-rounded-image" src="https://img.freepik.com/free-photo/close-up-silhouette-man-talking-phone_1098-2344.jpg?size=626&ext=jpg&uid=R89165474&ga=GA1.1.761342888.1672160419&semt=ais" alt="">
+                  </div>
+                </div>
+              </div>
+                <ul class="items-attributes">
+                    <li> <a (click)="onOpenModalEdit(worker,'deleteForm')"class="delete-button" 
+                         id="deleteItem" data-placement="top" role="dialog" data-original-title="Delete" ><img  class="deleteItemLogo"
+                         id="deleteImage" src="https://cdn-icons-png.flaticon.com/128/2920/2920658.png" alt=""></a> </li>
+                    <li> <a (click)="onOpenModalEdit(worker,'editForm')"class="delete-button" 
+                            id="deleteItem" data-placement="top" role="dialog" data-original-title="Delete" ><img  class="deleteItemLogo"
+                            id="deleteImage" src="https://cdn-icons-png.flaticon.com/128/181/181540.png" alt=""></a> </li>
+                  <li class="it-attributes"><i></i>profession <span class="spa">- {{worker?.jobtitle}}</span></li>
+                  <li class="it-attributes"><i></i>Specialty <span class="spa">- {{worker?.specialty}}</span></li>
+                  <li class="it-attributes"><i></i>Tel <span class="spa">- {{worker?.contact}}</span></li>
+                  <li class="it-attributes"><i></i>location <span class="spa">- {{worker?.workZone}}</span><img (click)="onOpenModal('findLoc')" class="loco" src="https://cdn-icons-png.flaticon.com/512/2991/2991231.png" alt=""></li>
+                 <li class="it-attributes"><i></i>Email <span class="spa">- {{worker?.email}}</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+</section>
+  
+</section>
+<hr>
+
+<!--create worker-->
+<div class="modal fade" id="createProduct" tabindex="-1" role="dialog" aria-labelledby="createProduct" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="mark">
+    <h2>POST WORKER PROFILE</h2>
+    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <form>
+      <label for="productCategory">job title </label>
+      <input type="text" id="productCategory" name="jobtitle" placeholder="like plumber teacher..." maxlength="28">
+      <label for="contact"> contact </label>
+      <input type="number" id="price" name="contact"  placeholder=" enter tel " required>
+      <label for="productLocation">work zone </label>
+      <input type="text" id="productLocation" name="workzone"  placeholder="availability zone..." maxlength="65">
+      <label for="email">email <span>:</span></label>
+      <input type="email" id="contact" name="email" placeholder=" like banga@gmail.com...">
+      <label for="productDescription"> specialty </label>
+      <textarea  id="productDescription"  name="specialty" placeholder="brief description of your specialty in the entered profession..." rows="4" cols="27" maxlength="110"></textarea>
+       <label for="password"> Password <span>(for deleting)</span></label>
+      <input type="number"  name="password" id="productPassword"  placeholder="atleast 8 figures" >
+      <label class="chooseImage" for="file">
+        <i class="material-icons">add_photo_alternate</i>&nbsp;1</label>
+      <input class="form-control" name="imageUrl" type="file" id="file"  accept="image/*" required>
+      <img  alt="first" id="displayImage" class="item-rounded-image" >
+      <label class="chooseImage" for="file2">
+        <i class="material-icons">add_photo_alternate</i>&nbsp;2</label>
+      <input  type="file" id="file2"  name="mainImage1" accept="image/*" required>
+      <img  alt="second" id="displayImage2" class="item-rounded-image">
+      <label class="chooseImage" for="file3">
+        <i class="material-icons">add_photo_alternate</i>&nbsp;3</label>
+      <input  type="file" id="file3"  name="mainImage2"  accept="image/*" >
+      <img  alt="third" id="displayImage3" class="item-rounded-image">
+      <div class="postBtn">
+        <button disabled type="submit"  class="submit">post</button>
+        <button class="resetAll" type="reset">clear</button>
+      </div>
+    </form>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<!--deleting worker-->
+<div  class="modal fade" id="deleteProduct" tabindex="-1" role="dialog" aria-labelledby="updateProduct" aria-hidden="true">
+  <div  class="modal-dialog" role="document" style="background-color: white; margin-top: 3em;margin-left: .5em; height: 10em;">
+    <div class="modal-content" >
+    <button  type="button" class="closeDelete" data-dismiss="modal" aria-label="close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <form>
+      <div class="form-group" style="border-radius: 4px; ">
+  <label style=" margin-left: .5em; margin-right: .3em;" for="passCheck">to Delete this Product you have to enter your Password</label>
+  <input type="number" name="passCheck" style="width: 16em; height:2.5em;  margin: auto auto -1em .8em ;border: none; box-shadow: 0 .0 .4rem 0 black; border-radius: 4px;">
+  <input style="margin-left: 1em;"  type="submit" class="updateCheck" value="Delete">
+      </div>
+  </form> 
+</div>
+</div>
+</div>
+
+ <!--edit worker example-->
+ <div class="modal fade" id="editProduct" tabindex="-1" role="dialog" aria-labelledby="editProduct" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="mark">
+    <h2>EDIT WORKER</h2>
+    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <form>
+      <label for="jobtitle"> profession </label>
+      <input type="text" id="productCategory" ngModel="{{deleteWorker?.jobtitle}}" name="jobtitle" maxlength="28">
+      <label for="contact"> contact </label>
+      <input type="number" id="productLocation" ngModel="{{deleteWorker?.contact}}" name="contact" maxlength="65">
+      <label for="contact"> workzone <span>:</span></label>
+      <input type="text" id="contact" ngModel="{{deleteWorker?.workZone}}" name="workZone" >
+      <label for="email"> email <span>:</span></label>
+      <input type="email" id="contact" ngModel="{{deleteWorker?.email}}" name="workZone" >
+      <label for="productDescription">specialty</label>
+      <textarea  id="productDescription" ngModel="{{deleteWorker?.specialty}}" name="eventDescription"  rows="4" cols="27" maxlength="110"></textarea>
+       <label for="productPassword"> Password <span>(for deleting)</span></label>
+      <input type="number" ngModel="{{deleteWorker?.password}}" name="productPassword" id="productPassword" >
+      <label class="chooseImage" for="file">
+        <i class="material-icons">add_photo_alternate</i>&nbsp;1</label>
+      <input class="form-control" name="imageUrl" type="file" id="file"  accept="image/*" required>
+      <img  alt="first" id="displayImage" class="item-rounded-image" >
+      <label class="chooseImage" for="file2">
+        <i class="material-icons">add_photo_alternate</i>&nbsp;2</label>
+      <input  type="file" id="file2"  name="mainImage1" accept="image/*" required>
+      <img  alt="second" id="displayImage2" class="item-rounded-image">
+      <label class="chooseImage" for="file3">
+        <i class="material-icons">add_photo_alternate</i>&nbsp;3</label>
+      <input  type="file" id="file3"  name="mainImage2"  accept="image/*" >
+      <img  alt="third" id="displayImage3" class="item-rounded-image">
+      <div class="postBtn">
+        <button disabled type="submit"  class="submit">edit</button>
+        <button class="resetAll" type="reset">clear</button>
+      </div>
+    </form>
+  </div>
+  </div>
+</div>
+</div>
+
+<!--find location-->
+<div  class="modal fade" id="locationForm" tabindex="-1" role="dialog" aria-labelledby="updateProduct" aria-hidden="true">
+  <div  class="modal-dialog" role="document" style="background-color: white; margin-top: 3em;margin-left: .5em; height: 11em;">
+    <div class="modal-content" >
+      <button  type="button" class="closeDelete" data-dismiss="modal" aria-label="close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+<section class="contact-right" id="findLocation">
+  <h3>Find <span>Location</span> : </h3> <img class="locationLogo" src="https://cdn-icons-png.flaticon.com/128/854/854878.png" alt="">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15923.380644645886!2d11.499670056554136!3d3.84339644704202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf7a309a7977%3A0x7f54bad35e693c51!2sJaunde%2C%20Kamerun!5e0!3m2!1sde!2sde!4v1644882446916!5m2!1sde!2sde"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+</div>
+</div>
+</div>
+
+<!--footer-->
+
+</body>

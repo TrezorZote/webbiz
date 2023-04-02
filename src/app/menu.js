@@ -15,7 +15,7 @@ window.onload=function(){
        navBtn.classList.remove('open-nav')
    }
 
-   
+    
 const imageShow= document.getElementById('file');
 const imageShow2= document.getElementById('file2');
 const imageShow3= document.getElementById('file3');
@@ -63,8 +63,7 @@ function select(){
                              
                     
                     
-                    
-                    
+                                    
   }
 
   

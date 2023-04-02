@@ -1,0 +1,246 @@
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="hotel.component.css">
+
+
+<body id="markSec">
+
+<br>
+<section class="marketing">
+<div class="grid">
+  <div>
+  <img class="event" src="https://img.freepik.com/free-vector/booking-accommodation-mobile-application-illustration_335657-421.jpg?size=626&ext=jpg&ga=GA1.1.761342888.1672160419&semt=ais" alt="">
+</div>
+<div class="logoss">
+  <img class="clothLogo" src="https://cdn-icons-png.flaticon.com/128/2946/2946766.png" alt="">
+   <img class="houseLogo" src="https://cdn-icons-png.flaticon.com/128/3343/3343102.png" alt="">
+   <img class="phoneSell" src="https://cdn-icons-png.flaticon.com/128/8948/8948845.png" alt="">
+   <img class="carLogo"  src="https://cdn-icons-png.flaticon.com/128/2534/2534679.png" alt="">
+   <img class="laptopSell" src="https://cdn-icons-png.flaticon.com/128/1041/1041023.png" alt="">
+ </div>
+ <div class="p">
+<P> This is an example of a accomodation <sup>WebApp</sup> 
+ that enables you find accomodations in specific regions. Post your accomodations by clicking the button
+ <img (click)="onOpenModal('create')" class="sell"   src="https://cdn-icons-png.flaticon.com/128/5176/5176373.png"  alt=""> 
+ <br>
+  search for accomodations like hotels guestrooms appartments and more in the second search box.
+   Enter the region of preference in the first aswell.
+</P>
+</div>
+</div>
+<form>
+  <div class="center">
+  <input class="regionSearch" type="search" #region="ngModel" ngModel name="region" required   placeholder="region of preference...">
+ <button class="regionFilter" (click)="byRegion(region.value)">ok</button>
+ </div>
+</form>
+<form>
+<div class="center">
+<input type="search" (ngModelChange)="searchhotel(key.value)" #key="ngModel" ngModel  name="key" id="searchName" class="nameSearch" placeholder="hotel guestroom appart"><img class="searchIcon" src="https://cdn-icons-png.flaticon.com/128/5423/5423194.png" alt="">
+</div>
+</form>
+<div *ngIf="hotelsArray?.length==0" class="noItems">
+<div class="alerter" role="alert">
+<h4 class="alerter"><img class="oops" src="https://cdn-icons-png.flaticon.com/128/2341/2341885.png" alt="">No accomodation Found!</h4>
+</div>
+</div>
+
+<br>
+ 
+<!--card section-->  
+ 
+  <section class="cards" id="main-container">
+    <div *ngFor="let hotel of hotelsArray"   class="item-container1">
+        <div class="item-row">
+          <div class="item-column1">
+            <div class="item-card-part1">
+              <div id="carouselExampleSlidesOnly" data-bs-ride="carousel"  class="carousel slide" >
+              <div class="carousel-inner" style="background-color: rgb(255, 255, 255);  height: 16em;" role="listbox" >
+
+                <div   class="carousel-item active">
+                  <img class="item-rounded-image" src="https://media.istockphoto.com/id/155391159/de/foto/ocean-drive-am-strand-in-miami.jpg?s=612x612&w=0&k=20&c=7LNdfCLZWu7IZHiu5bJIy2RaQv-RupDHdL8o7vCFhTw=" alt="">
+                </div>
+                <div class="carousel-item ">
+                  <img class="item-rounded-image"  src="https://media.istockphoto.com/id/1222449098/de/vektor/modernes-schlafzimmer-mit-m%C3%B6beln-flache-stil-vektor-illustration-gem%C3%BCtliches-interieur.jpg?s=612x612&w=0&k=20&c=2uX6SKKfpCNbwsbTw9IQMdxKDTzz8_tjJntGw05e_GI=" alt="">
+                </div>
+                <div  class="carousel-item" >
+                  <img class="item-rounded-image"  src="https://media.istockphoto.com/id/1141951033/de/foto/luxuszimmer-interieur.jpg?s=612x612&w=0&k=20&c=-qe-oXvAL79R_d1FcNmuN_4RIa4aQqF9IQYI95oyWDM=" alt="">
+                </div>
+              </div>
+            </div>
+              <ul class="items-attributes">
+                <li> <a (click)="onOpenModalEdit(hotel,'moreInfo')"class="hotel-button" 
+                  id="hotelItem" data-placement="top" role="dialog" data-original-title="hotel" ><img  class="deleteItemLogo"
+                  id="hotelImage" src="https://cdn-icons-png.flaticon.com/128/3416/3416075.png" alt=""></a> </li>
+                  <li> <a (click)="onOpenModalEdit(hotel,'deleteForm')"class="hotel-button" 
+                       id="hotelItem" data-placement="top" role="dialog" data-original-title="hotel" ><img  class="deleteItemLogo"
+                       id="hotelImage" src="https://cdn-icons-png.flaticon.com/128/2920/2920658.png" alt=""></a> </li>
+                  <li> <a (click)="onOpenModalEdit(hotel,'editForm')"class="hotel-button" 
+                          id="hotelItem" data-placement="top" role="dialog" data-original-title="hotel" ><img  class="deleteItemLogo"
+                          id="hotelImage" src="https://cdn-icons-png.flaticon.com/128/181/181540.png" alt=""></a> </li>
+                          <li class="it-attributes"><i></i>Category <span class="spa">- {{hotel?.hotelCategory}}</span></li>
+                          <li class="it-attributes"><i></i>Description <span class="spa">- {{hotel?.hotelDescription}}</span></li>
+                          <li class="it-attributes"><i></i>location <span class="spa">- {{hotel?.hotelLocation}}</span><img (click)="onOpenModal('findLoc')" class="loco" src="https://cdn-icons-png.flaticon.com/128/0/619.png" alt=""></li>
+                          <li class="it-attributes"><i></i>Price a night <span class="spa">- {{hotel?.hotelPrice}}</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+</section>
+<hr>
+
+<!--create accomodation-->
+<div class="modal fade" id="createhotel" tabindex="-1" role="dialog" aria-labelledby="createHotel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="mark">
+  <h2>POST accomodation PROFILE</h2>
+  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <form>
+    <label for="HotelCategory"> Category </label>
+   <input type="text" id="HotelCategory" #hotCat="ngModel" ngModel name="hotCat" placeholder="like hotel guestroom appartment" maxlength="28">
+   <label for="price"> Price a night </label>
+   <input type="number" id="price" #hotPrice="ngModel" ngModel name="hotPrice"  placeholder=" enter price per night " required>
+   <label for="HotelLocation"> location </label>
+   <input type="text" id="HotelLocation" #hotLoc="ngModel" ngModel name="hotLoc"  placeholder="accomodation location..." maxlength="65">
+   <label for="date">booked already <span>:</span></label>
+   <input type="date" #date="ngModel" ngModel  id="date" name="date" placeholder="add reserved dates" min="{{minDate}}">
+   <img class="addDate" (click)="addDate(date.value,'booked')" src="https://cdn-icons-png.flaticon.com/128/875/875068.png" alt="">
+   <div *ngIf="reservedDates.length==0" class="center">
+   <h5>choose date and click on add to save and show </h5>
+   </div>
+   <div *ngIf="reservedDates.length!=0">
+    <div *ngFor="let dates of reservedDates">
+      <ol class="dateList">
+      <li>{{dates}}</li>
+    </ol>
+    </div>
+   </div>
+   <label for="contact"> Tel <span>:</span></label>
+   <input type="tel" id="contact" #contact="ngModel" ngModel name="contact" placeholder="enter atleast 9 figures">
+   <label for="HotelDescription">more description</label>
+   <textarea  id="HotelDescription" #hotDesc="ngModel" ngModel name="hotDesc" placeholder="brief description..." rows="3" cols="27" maxlength="30"></textarea>
+    <label for="HotelPassword"> Password  <span>(for deleting)</span></label>
+   <input type="number" #pass="ngModel" ngModel name="pass" id="HotelPassword"  placeholder="atleast 8 figures" >
+   <label class="chooseImage" for="file">
+     <i class="material-icons">add_photo_alternate</i>&nbsp;1</label>
+   <input class="form-control" name="imageUrl" type="file" id="file"  accept="image/*" required>
+   <img  alt="first" id="displayImage" class="item-rounded-image" >
+   <div class="postBtn">
+     <button (click)="newHotel(contact.value,hotCat.value,hotDesc.value,hotLoc.value,pass.value,hotPrice.value,reservedDates)"  class="submit">post</button>
+     <button class="resetAll" type="reset">clear</button>
+   </div>
+  </form>
+</div>
+</div>
+</div>
+</div>
+
+
+<!--deleting accomodation-->
+<div  class="modal fade" id="deletehotel" tabindex="-1" role="dialog" aria-labelledby="updateHotel" aria-hidden="true">
+<div  class="modal-dialog" role="document" style="background-color: white; margin-top: 3em;margin-left: .5em; height: 10em;">
+  <div class="modal-content" >
+  <button  type="button" class="closeDelete" data-dismiss="modal" aria-label="close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <form>
+    <div class="form-group" style="border-radius: 4px; ">
+<label style=" margin-left: .5em; margin-right: .3em;" for="passCheck">to delete this accomodation you have to enter your Password</label>
+<input type="number" #passCheck="ngModel" ngModel name="passCheck" style="width: 16em; height:2.5em;  margin: auto auto -1em .8em ;border: none; box-shadow: 0 .0 .4rem 0 black; border-radius: 4px;">
+<button style="margin-left: 1em;" (click)="onDelete(deletehotel,passCheck.value)" class="updateCheck">delete</button>
+    </div>
+</form> 
+</div>
+</div>
+</div>
+
+<!--edit hotel example-->
+<div class="modal fade" id="edithotel" tabindex="-1" role="dialog" aria-labelledby="editHotel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="mark">
+  <h2>EDIT accomodation</h2>
+  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <form>
+    <label for="hotelCategory"> Category </label>
+    <input type="text" id="hotelCategory" ngModel="{{deletehotel?.hotelCategory}}" name=" hotel guestroom etc" maxlength="28">
+    <label for="price"> Price a night </label>
+    <input type="number" id="price" ngModel="{{deletehotel?.hotelPrice}}" name="Price a night">
+    <label for="hotelLocation"> accomodation location </label>
+    <input type="text" id="hotelLocation" ngModel="{{deletehotel?.hotelLocation}}" name="accomodation Location" maxlength="65">
+    <label for="contact"> Tel <span>:</span></label>
+    <input type="tel" id="contact" ngModel="{{deletehotel?.contact}}" name="contact" placeholder="enter atleast 9 figures">
+    <label for="hotelDescription"> accomodation description</label>
+    <textarea  id="hotelDescription" ngModel="{{deletehotel?.hotelDescription}}" name="more about accomodation "  rows="4" cols="27" maxlength="110"></textarea>
+     <label for="hotelPassword"> Password  <span>(for deleting)</span></label>
+    <input type="number" ngModel="{{deletehotel?.hotelPassword}}" name="hotelPassword" id="hotelPassword"  >
+    <label class="chooseImage" for="file">
+      <i class="material-icons">add_photo_alternate</i>&nbsp;1</label>
+    <input class="form-control" name="imageUrl" type="file" id="file"  accept="image/*" required>
+    <img  alt="first" id="displayImage" class="item-rounded-image" >
+    <div class="postBtn">
+      <button disabled type="submit"  class="submit">edit</button>
+      <button class="resetAll" type="reset">clear</button>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+</div>
+
+<!--find location-->
+<div  class="modal fade" id="locationForm" tabindex="-1" role="dialog" aria-labelledby="updateHotel" aria-hidden="true">
+<div  class="modal-dialog" role="document" style="background-color: white; margin-top: 3em;margin-left: .5em; height: 11em;">
+  <div class="modal-content" >
+    <button  type="button" class="closeDelete" data-dismiss="modal" aria-label="close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+<section class="contact-right" id="findLocation">
+<h3>Find <span>Location</span> : </h3> <img class="locationLogo" src="https://cdn-icons-png.flaticon.com/128/854/854878.png" alt="">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15923.380644645886!2d11.499670056554136!3d3.84339644704202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf7a309a7977%3A0x7f54bad35e693c51!2sJaunde%2C%20Kamerun!5e0!3m2!1sde!2sde!4v1644882446916!5m2!1sde!2sde"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+</div>
+</div>
+</div>
+
+
+<!--moreInfo-->
+<div  class="modal fade" id="moreInfo" tabindex="-1" role="dialog" aria-labelledby="updateHotel" aria-hidden="true">
+<div  class="modal-dialog" role="document" style="background-color: white; margin-top: 3em;margin-left: .5em; height: 11em;">
+  <div class="modal-content" >
+    <button  type="button" class="closeDelete" data-dismiss="modal" aria-label="close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <h4 style="font-family: Trebuchet MS;">Contact Info & reserve dates</h4>
+    <div class="more">
+    <li class="it-attributes"><img class="call" src="https://cdn-icons-png.flaticon.com/128/3128/3128322.png" alt=""> <span class="spa">  {{deletehotel?.contact}}</span></li>
+   <form >
+    <input class="selectDate" type="date" #book="ngModel" ngModel  id="book" name="book" placeholder="add stay dates" min="{{minDate}}" >
+    <img class="addDate" (click)="addDate(book.value ,'stay')" src="https://cdn-icons-png.flaticon.com/128/875/875068.png" alt="">
+  </form>
+    <div *ngIf="staydates.length==0">
+      <h5>no dates selected yet</h5>
+    </div>
+    <div *ngIf="staydates.length!=0">
+     <div *ngFor="let stay of staydates" class="center">
+       <ol class="dateList">
+       <li><img class="li" src="https://cdn-icons-png.flaticon.com/128/5839/5839078.png" alt="">  {{stay}}</li>
+     </ol>
+     </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+</body>

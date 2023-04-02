@@ -15,7 +15,13 @@ section.marketing p  {
   font-family: 'Poppins';
   font-weight: 900;
   font-size: 1.05em;
-  color: rgb(29, 29, 29);
+  color: rgb(51, 51, 51);
+}
+
+.loco{
+  width: 1.3em;
+  height: 1.3em;
+  margin-top: -0.5em;
 }
 
 h4{ 
@@ -24,9 +30,30 @@ h4{
   font-size: 1.3em;
   margin-top: .3em;
   text-align: center;
-  color: rgb(39, 39, 39);
+  color: black;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
+}
+
+h5{
+  color: chocolate;
+
+}
+.dateList{
+  margin-left: -.5em;
+  list-style-type: none;
+  color:chocolate;
+}
+.addDate{
+  margin-top: .1em;
+  border-radius: 8px;
+  width: 1.8em;
+  height: 1.8em;
+  background-color: chocolate;
+}
+.addDate:hover{
+  cursor: pointer;
+  background-color: aquamarine;
 }
 
 .mark {
@@ -41,7 +68,7 @@ h4{
   text-align: center;
   padding-left: .5em;
   margin: -2.5em auto 1em -.5em;
-  color: rgb(55, 84, 10);
+  color: chocolate;
   font-size: 1.25em;
   font-family: 'Trebuchet MS';
 }
@@ -51,26 +78,22 @@ h4{
   cursor: pointer;
 }
 
-.sell{
-  background-color: rgb(99, 152, 20);
-  border-radius: 100%;
-  box-shadow: 0 .1rem .5rem 0 gray;
-  width: 1.7em;
-  height: 1.7em;
-  cursor: pointer;
-}
-.sell:hover{
-  background-color: grey;
-
+.oops{
+  width: 1.8em;
+  height: 1.8em;
 }
 
 
+.li{
+  width: 1.3em;
+  height: 1.3em;
+}
 .mark label {
   display: block;
   margin-top: 1em;
   margin-bottom: 0;
   font-weight: bold;
-  color:black ;
+  color:black;
   font-family: 'Poppins';
 }
 
@@ -85,6 +108,18 @@ h4{
   border-right: none;
   margin-bottom: 0;
   width: 100%;
+  height: 2.5em;
+  font-family: 'Poppins';
+  font-size: 1em;
+  font-weight: bold;
+}
+.selectDate{
+  border-bottom: 3px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 0;
+  width: 45%;
   height: 2.5em;
   font-family: 'Poppins';
   font-size: 1em;
@@ -161,14 +196,28 @@ height: 2em;
   height:2em ;
   }
   
-.submit:hover {
-background-color: black;
-color: white;
+  .submit:hover {
+    background-color: black;
+    color: white;
+    }
+    .resetAll:hover {
+      background-color: black;
+      color: white;
+      }
+
+
+.sell{
+  background-color: rgb(116, 54, 116);
+  border-radius: 100%;
+  box-shadow: 0 .1rem .5rem 0 white;
+  width: 1.7em;
+  height: 1.7em;
+  cursor: pointer;
 }
-.resetAll:hover {
-  background-color: black;
-  color: white;
-  }
+.sell:hover{
+  background-color: plum;
+
+}
 
 section.contact-right h3 {
   margin-top: -.5em;
@@ -195,35 +244,49 @@ section.contact-right iframe {
   margin-left: .5em;
 
 }
+.loco:hover{
+  cursor: pointer;
+}
+
+.event{
+  object-fit: contain;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 100%;
+}
+
 
 .logoss{
   align-self: center;
 display: grid;
-grid-template-columns: 22% 22% 22% 22% 22% ;
+grid-template-columns: 24% 22% 22% 20% 22% ;
 }
 .clothLogo{
+  background-color: cadetblue;
+  
+  border: 2px solid #151414;
   border-radius: 100%;
-  border: 2px solid #361500;
-  background-color: #361500;
   width: 1.8em;
   height: 1.8em;
-  margin-left: .65em;
+  margin-left: .75em;
  margin-top: 2em;
 }
 
 .laptopSell{
+  background-color: rgb(116, 54, 116);
+  
+  border: 2px solid #151414;
   border-radius: 100%;
-  border: 2px solid #361500;
-  background-color: #361500;
   width: 1.9em;
   height: 1.9em;
   margin-top: 2em;
 }
 
 .phoneSell{
+  background-color: rgb(116, 54, 116);
+  
+  border: 2px solid #151414;
   border-radius: 100%;
-  border: 2px solid #361500;
-  background-color: #361500;
   width: 2em;
   height: 2em;
   margin-top: 2em;
@@ -231,85 +294,74 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
 
 
 .carLogo{
+  background-color: rgb(116, 54, 116);
+  
+  border: 2px solid #151414;
   border-radius: 100%;
-  border: 2px solid #361500;
-  background-color: #361500;
   width: 2em;
   height: 2em;
   margin-top: 2em;
 }
 
 .houseLogo{
+  background-color: rgb(116, 54, 116);
+  
+  border: 2px solid #151414;
   border-radius: 100%;
-  border: 2px solid #361500;
-  background-color: #361500;
-  width: 2em;
-  height: 2em;
+  width: 1.9em;
+  height: 1.9em;
   margin-top: 2em;
 }
 
+.regionFilter{
+ border-right: none;
+ border-bottom: none;
+ border-top: none;
+  width: 2.4em;
+  height: 2.5em;
+  margin-left: -2.5em;
+ border-left: 2px solid gray;
+  color: rgb(34, 34, 34);
+  
+}
+.regionFilter:hover{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 2px solid black;
+  background-color: rgb(116, 54, 116);
+  color: gainsboro;
+}
 
 .center{
   text-align: center;
 }
 
-.regionFilter{
-  border-right: none;
-  border-bottom: none;
-  border-top: none;
-   width: 2.4em;
-   height: 2.5em;
-   margin-left: -2.5em;
-  border-left: 2px solid gray;
-   color: rgb(47, 47, 47);
-   
- }
- .regionFilter:hover{
-   border-top-right-radius: 8px;
-   border-bottom-right-radius: 8px;
-   border-left: 2px solid black;
-   background-color: rgb(99, 152, 20);
-   color: whitesmoke;
- }
-
- .call{
-  width: 2em;
-  height: 2em;
+.regionSearch{
+    margin-top: 1em;
+    border-radius: 8px;
+    width: 17.25em;
+    height: 2.75em;
+    border: none;
+    background-color: whitesmoke;
+    box-shadow: 0 0 .6rem 0 black;
+    font-family: 'Trebuchet MS';
+    font-size: 1.05em;
+    text-align: center; 
+    margin-left: 2.5%;
 }
-.more{
-  text-align: center;
-}
- 
- .center{
-   text-align: center;
- }
- 
- .regionSearch{
-     margin-top: 1em;
-     border-radius: 8px;
-     width: 17.25em;
-     height: 2.75em;
-     border: none;
-     background-color: whitesmoke;
-     box-shadow: 0 0 .6rem 0 black;
-     font-family: 'Trebuchet MS';
-     font-size: 1.05em;
-     text-align: center; 
-     margin-left: 2.5%;
- }
 
 .nameSearch{
   margin-top: 1em;
-  border-radius: 8px;
-  width: 17.25em;
-  height: 2.75em;
-  border: none;
-  background-color: whitesmoke;
-  box-shadow: 0 0 .6rem 0 black;
-  font-family: 'Trebuchet MS';
-  font-size: 1.05em;
-  text-align: center;
-  margin-left: 2.5%;
+    border-radius: 8px;
+    width: 17.25em;
+    height: 2.75em;
+    border: none;
+    background-color: whitesmoke;
+    box-shadow: 0 0 .6rem 0 black;
+    font-family: 'Trebuchet MS';
+    font-size: 1.05em;
+    text-align: center;
+    margin-left: 2.5%;
 }
 
 .searchIcon{
@@ -322,10 +374,9 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
   border-left: 2px solid gray;
   background-color: whitesmoke;
  }
-
  .searchIcon:hover{
   border-left: 2px solid black;
-  background-color: rgb(99, 152, 20);
+  background-color: rgb(116, 54, 116);
   cursor: pointer;
  }
 
@@ -339,22 +390,13 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
 .item-card-part1{
 margin: .8em auto .4em .20em;
  border-radius: 8px;
- box-shadow: 0 .3rem .4rem 0 black;
+ box-shadow: 0 .2rem .4rem 0 black;
  width: 98%;
- height: 23.5em;
+ height: 25.5em;
 display: inline-block;
 background-color: whitesmoke;
 }
 
-
-.loco{
-  width: 1.3em;
-  height: 1.3em;
-  margin-top: -0.5em;
-}
-.loco:hover{
-  cursor: pointer;
-}
 .item-rounded-image{
   object-fit: contain;
   width: 100%;
@@ -362,46 +404,49 @@ background-color: whitesmoke;
    margin: .25em .25em .5em 0;
 }
 
-.event{
-  
-  object-fit: contain;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  width: 100%;
-}
 
 .items-attributes {
     list-style-type: none;
-  font-weight: 600;
+   font-weight: 600;
    font-size: .85em;
     margin-left: -1.8em;
     margin-top: .5em;
     color:black;
     font-family: 'Comfortaa';
-    letter-spacing: .07em;  
+    letter-spacing: .07em;
 }
 .it-attributes{
   list-style-type: none;
+ 
+}
+.call{
+  width: 2em;
+  height: 2em;
+}
+
+.more{
+  text-align: center;
 }
 
 .spa{
   font-family: 'comfortaa';
-    color:rgb(56, 87, 8);
+   color:rgb(166, 124, 19);
   font-size: 1.05em;
   font-weight: bolder;
 }
 
 
 .deleteItemLogo{
-  width: 1.6em;
-  height: 1.6em;
+  width: 1.55em;
+  height: 1.5em;
   float: right;
   margin-top:-.1em ;
   margin-right: .45em;
   cursor: pointer;
   z-index: 855;
-  background-color:olivedrab;
+  background-color:lightslategray;
   border-radius: 12px;
+  box-shadow: 0 .1rem .3rem 0 black;
  
 }.deleteItemLogo:hover{
  background-color: gainsboro;
@@ -416,13 +461,13 @@ background-color: whitesmoke;
  float: right;
 font-size: 1.6em;
  border: none;
- background-color: rgb(99, 152, 20);
+ background-color: chocolate;
  margin: 0 .5em .5em auto;
  cursor: pointer;
  }
 
  .pass label{
-   color:#361500;
+   color:black;
  display: block;
  margin-left: .8em;
  margin-bottom: .3em;
@@ -456,9 +501,8 @@ body {
   font-family: 'Trebuchet MS';
 }
 
-
-
 @media only screen and (min-width: 640px) {
+  
   .locationLogo{
    display: none;
   }
@@ -470,6 +514,8 @@ body {
   }
 
 .grid{
+  margin-top: -1em;
+  background-color: white;
  display: flex;
   align-items: center;
  justify-content: center;
@@ -479,7 +525,7 @@ body {
    margin-right: -1em;
    width: 75%;
    float: right;
-   color: rgb(25, 25, 25);
+   color: rgb(41, 41, 41);
    border: none;
    box-shadow: none;
   }
@@ -489,13 +535,12 @@ body {
     
   }
   .event{
-    border-radius: 100%;
-    width: 190%;
-    margin-left: .5em;
+    width: 180%;
     margin-top: .3em;
     margin-bottom: .3em;
-    box-shadow: 0 0 .3rem .5rem rgb(255, 115, 0);
+   
   }
+ 
   .cards{ 
     margin-left: 1%;
       display: grid;
@@ -506,24 +551,23 @@ body {
      }
   }
 @media only screen and (min-width: 1015px) {
-
-  .cards{ 
-    margin-left: 1%;
-    display: grid;
-      grid-template-columns:33% 33% 33%;
-    }
+.cards{ 
+  margin-left: 1%;
+  display: grid;
+    grid-template-columns:33% 33% 33%;
+  }
   .item-card-part1{
     width: 20em;
     margin-left: .4em;
    }
 }
 @media only screen and (min-width: 1340px) {
-  .cards{ 
-    margin-left: 1%;
-    display: grid;
-      grid-template-columns: 25% 25% 25% 25% ;
+    .cards{ 
+      margin-left: 1%;
+      display: grid;
+        grid-template-columns: 25% 25% 25% 25% ;
+      }
     }
-  }
               
   @media only screen and (min-width: 630px) {
                 
@@ -561,17 +605,4 @@ body {
   display: none;
  }
      
-}
-
-.footer-section{
-  background-color: #151414;
-  padding: 1em;
-}
-.footer-section span{
- color: rgb(138, 138, 138);
-
-}
-.copyright-text{
- border-bottom: -2em;
- color:rgb(100, 100, 100); 
 }

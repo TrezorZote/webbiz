@@ -27,7 +27,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["src/app/menu.js","src/app/ecommerce/menu.js","src/app/events/menu.js","src/app/workers/menu.js"]
+            "scripts": ["src/app/menu.js"] 
           },
           "configurations": {
             "production": {
@@ -39,8 +39,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "9kb",
-                  "maximumError": "9kb"
+                  "maximumWarning": "10kb",
+                  "maximumError": "10kb"
                 }
               ],
               "outputHashing": "all"

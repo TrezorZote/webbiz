@@ -4,7 +4,7 @@
 section.marketing {
   background: white;
   margin: .5em .5em .5em .5em;
-  box-shadow: 0 0 1rem 0 #361500;
+  box-shadow: 0 0 1rem 0 black;
   border-radius: 8px;
 }
 
@@ -47,7 +47,7 @@ h4{
   text-align: center;
   padding-left: .5em;
   margin: -2.5em auto 1em -.5em;
-  color: #361500;
+  color: black;
   font-size: 1.25em;
   font-family: 'Trebuchet MS';
 }
@@ -63,7 +63,7 @@ h4{
   margin-top: 1em;
   margin-bottom: 0;
   font-weight: bold;
-  color:#361500 ;
+  color:black ;
   font-family: 'Poppins';
 }
 
@@ -72,7 +72,7 @@ h4{
 }
 
 .mark input{
-  border-bottom: 3px solid #361500;
+  border-bottom: 3px solid black;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -154,14 +154,17 @@ height: 2em;
   height:2em ;
   }
   
-.submit-itemcomment:hover {
-background-color: black;
-color: white;
-
-}
+  .submit:hover {
+    background-color: black;
+    color: white;
+    }
+    .resetAll:hover {
+      background-color: black;
+      color: white;
+      }
 
 .sell{
-  background-color: lightseagreen;
+  background-color: rgb(19, 95, 91);
   border-radius: 100%;
   box-shadow: 0 .1rem .5rem 0 white;
   width: 1.7em;
@@ -169,7 +172,7 @@ color: white;
   cursor: pointer;
 }
 .sell:hover{
-  background-color: orange;
+  background-color: goldenrod;
 
 }
 
@@ -214,8 +217,9 @@ display: grid;
 grid-template-columns: 24% 22% 22% 20% 22% ;
 }
 .clothLogo{
-  background-color: cadetblue;
-  box-shadow: 0 .1rem .3rem 0 lightseagreen;
+  background-color: rgb(19, 95, 91);
+  box-shadow: 0 .1rem .3rem 0 rgb(19, 95, 91);
+  border: 2px solid chocolate;
   border-radius: 100%;
   width: 1.8em;
   height: 1.8em;
@@ -224,17 +228,19 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
 }
 
 .laptopSell{
-  background-color: lightseagreen;
-  box-shadow: 0 .1rem .3rem 0 lightseagreen;
+  background-color: rgb(19, 95, 91);
+  box-shadow: 0 .1rem .3rem 0 rgb(19, 95, 91);
+  border: 2px solid chocolate;
   border-radius: 100%;
-  width: 1.8em;
-  height: 1.8em;
+  width: 1.95em;
+  height: 1.95em;
   margin-top: 2em;
 }
 
 .phoneSell{
-  background-color: lightseagreen;
-  box-shadow: 0 .1rem .3rem 0 lightseagreen;
+  background-color: rgb(19, 95, 91);
+  box-shadow: 0 .1rem .3rem 0 rgb(19, 95, 91);
+  border: 2px solid chocolate;
   border-radius: 100%;
   width: 2em;
   height: 2em;
@@ -243,8 +249,9 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
 
 
 .carLogo{
-  background-color: lightseagreen;
-  box-shadow: 0 .1rem .3rem 0 lightseagreen;
+  background-color: rgb(19, 95, 91);
+  box-shadow: 0 .1rem .3rem 0 rgb(19, 95, 91);
+  border: 2px solid chocolate;
   border-radius: 100%;
   width: 2em;
   height: 2em;
@@ -252,20 +259,53 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
 }
 
 .houseLogo{
-  background-color: lightseagreen;
-  box-shadow: 0 .1rem .3rem 0 lightseagreen;
+  background-color: rgb(19, 95, 91);
+  box-shadow: 0 .1rem .3rem 0 rgb(19, 95, 91);
+  border: 2px solid chocolate;
   border-radius: 100%;
   width: 1.9em;
   height: 1.9em;
   margin-top: 2em;
 }
 
+.regionFilter{
+ border-right: none;
+ border-bottom: none;
+ border-top: none;
+  width: 2.4em;
+  height: 2.5em;
+  margin-left: -2.5em;
+ border-left: 2px solid gray;
+  color: rgb(32, 32, 32);
+  
+}
+.regionFilter:hover{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 2px solid black;
+  background-color: rgb(19, 95, 91);
+  color: whitesmoke;
+}
 
+.center{
+  text-align: center;
+}
+
+.regionSearch{
+    margin-top: 1em;
+    border-radius: 8px;
+    width: 17.25em;
+    height: 2.75em;
+    border: none;
+    background-color: whitesmoke;
+    box-shadow: 0 0 .6rem 0 black;
+    font-family: 'Trebuchet MS';
+    font-size: 1.05em;
+    text-align: center; 
+    margin-left: 2.5%;
+}
 
 .nameSearch{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 1em;
     border-radius: 8px;
     width: 17.25em;
@@ -276,15 +316,25 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
     font-family: 'Trebuchet MS';
     font-size: 1.05em;
     text-align: center;
+    margin-left: 2.5%;
 }
 
 .searchIcon{
-  width: 2.75em;
-  height:2.75em;
+  width: 2.5em;
+  height:2.5em;
   margin-bottom: .20em;
-  margin-left: -3em;
-  border-radius: 10px;
+  margin-left: -2.7em;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 2px solid gray;
+  background-color: whitesmoke;
  }
+ .searchIcon:hover{
+  border-left: 2px solid black;
+  background-color: rgb(19, 95, 91);
+  cursor: pointer;
+ }
+
 .alerter{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.1em;
@@ -297,11 +347,9 @@ margin: .8em auto .4em .20em;
  border-radius: 8px;
  box-shadow: 0 .2rem .4rem 0 black;
  width: 98%;
- height: 26.5em;
+ height: 21.5em;
 display: inline-block;
-background-image: url('https://img.freepik.com/free-vector/square-patterned-background_53876-93497.jpg?size=626&ext=jpg&uid=R89165474&ga=GA1.1.761342888.1672160419&semt=ais');
-background-position:92% 200%;
-background-size: contain;
+background-color: whitesmoke;
 }
 
 .item-rounded-image{
@@ -318,14 +366,26 @@ background-size: contain;
    font-size: .85em;
     margin-left: -1.8em;
     margin-top: .5em;
-    color:rgb(161, 132, 94);
+    color:black;
     font-family: 'Comfortaa';
     letter-spacing: .07em;
+}
+.it-attributes{
+  list-style-type: none;
+ 
+}
+.call{
+  width: 2em;
+  height: 2em;
+}
+
+.more{
+  text-align: center;
 }
 
 .spa{
   font-family: 'comfortaa';
-    color:rgb(156, 156, 156);
+    color:rgb(10, 66, 63);
   font-size: 1.05em;
   font-weight: bolder;
 }
@@ -339,13 +399,12 @@ background-size: contain;
   margin-right: .45em;
   cursor: pointer;
   z-index: 855;
-  background-color:rgb(137, 137, 137);
+  background-color:lightslategray;
   border-radius: 12px;
   box-shadow: 0 .1rem .3rem 0 black;
  
 }.deleteItemLogo:hover{
-  width: 1.6em;
-  height: 1.6em;
+ background-color: gainsboro;
 }
 
 .postBtn{
@@ -390,6 +449,8 @@ font-size: 1.6em;
     color: black;
     
     }
+
+
 
 
     .validate{
@@ -594,6 +655,7 @@ nav .navbar-menu a:hover {
   }
 
 .grid{
+  margin-top: -1em;
   background-color: white;
  display: flex;
   align-items: center;
@@ -614,18 +676,17 @@ nav .navbar-menu a:hover {
     
   }
   .event{
-    border-radius: 0px;
-    width: 200%;
+    width: 195%;
     margin-left: .5em;
     margin-top: .3em;
     margin-bottom: .3em;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+   
   }
  
   .cards{ 
+    margin-left: 1%;
       display: grid;
-        grid-template-columns:325px  auto;
+        grid-template-columns:50% 50%;
     }
     .item-card-part1{
       width: 20em;
@@ -633,8 +694,9 @@ nav .navbar-menu a:hover {
   }
 @media only screen and (min-width: 1015px) {
 .cards{ 
-    display: grid;
-      grid-template-columns:325px 325px auto;
+  margin-left: 1%;
+  display: grid;
+    grid-template-columns:33% 33% 33%;
   }
   .item-card-part1{
     width: 20em;
@@ -643,16 +705,11 @@ nav .navbar-menu a:hover {
 }
 @media only screen and (min-width: 1340px) {
     .cards{ 
-        display: grid;
-          grid-template-columns:325px 325px 325px auto;
+      margin-left: 1%;
+      display: grid;
+        grid-template-columns: 25% 25% 25% 25% ;
       }
     }
-    @media only screen and (min-width: 1665px) {
-        .cards{ 
-            display: grid;
-              grid-template-columns:325px 325px 325px 325px auto;
-          }
-        }
               
   @media only screen and (min-width: 630px) {
                 

@@ -9,7 +9,7 @@
 section.marketing {
   background: white;
   margin: .5em .5em .5em .5em;
-  box-shadow: 0 0 1rem 0 #361500;
+  box-shadow: 0 0 1rem 0 black;
   border-radius: 8px;
 }
 
@@ -59,14 +59,28 @@ h4{
 .sell{
   background-color: chocolate;
   border-radius: 100%;
-  box-shadow: 0 .1rem .5rem 0 orange;
-  width: 1.8em;
-  height: 1.8em;
+  width: 1.9em;
+  height: 1.9em;
   cursor: pointer;
+  border: 2px solid #361500;
 }
 .sell:hover{
   background-color: orange;
  
+}
+.corbeil{
+  background-color: chocolate;
+  border-radius: 100%;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid #151414;
+}
+.corbSup{
+  color: #361500;
+  font-size: 1.3em;
+  
 }
 
 .mark label {
@@ -165,11 +179,16 @@ height: 2em;
   height:2em ;
   }
   
-.submit-itemcomment:hover {
+.submit:hover {
 background-color: black;
 color: white;
 
 }
+.resetAll:hover {
+  background-color: black;
+  color: white;
+  
+  }
 
 section.contact-right h3 {
   margin-top: -.5em;
@@ -201,6 +220,9 @@ section.contact-right iframe {
   height: 1.3em;
   margin-top: -0.5em;
 }
+.loco:hover{
+  cursor: pointer;
+}
 
 .event{
   
@@ -217,9 +239,10 @@ grid-template-columns: 23% 22% 22% 22% 22% ;
 .clothLogo{
   background-color: orange;
   border-radius: 100%;
-  box-shadow: 0 .1rem .5rem 0 orange;
-  width: 1.8em;
-  height: 1.8em;
+  
+  border: 2px solid goldenrod;
+  width: 1.9em;
+  height: 1.9em;
   margin-left: 1em;
  margin-top: 2em;
 }
@@ -227,80 +250,121 @@ grid-template-columns: 23% 22% 22% 22% 22% ;
 .laptopSell{
   background-color: orange;
   border-radius: 100%;
-  box-shadow: 0 .1rem .5rem 0 orange;
-  width: 1.7em;
-  height: 1.7em;
+  
+  border: 2px solid goldenrod;
+  width: 1.8em;
+  height: 1.8em;
   margin-top: 2em;
 }
 
 .phoneSell{
   background-color: orange;
   border-radius: 100%;
-  box-shadow: 0 .1rem .5rem 0 orange;
-  width: 2em;
-  height: 2em;
+ 
+  border: 2px solid goldenrod;
+  width: 2.1em;
+  height: 2.1em;
   margin-top: 2em;
 }
 
 .carLogo{
   background-color: orange;
   border-radius: 100%;
-  box-shadow: 0 .1rem .5rem 0 orange;
-  width: 2em;
-  height: 2em;
+  
+  border: 2px solid goldenrod;
+  width: 2.1em;
+  height: 2.1em;
   margin-top: 2em;
 }
 
 .houseLogo{
   background-color: orange;
   border-radius: 100%;
-  box-shadow: 0 .1rem .5rem 0 orange;
-  width: 1.8em;
-  height: 1.8em;
+  
+  border: 2px solid goldenrod;
+  width: 1.9em;
+  height: 1.9em;
   margin-top: 2em;
 }
 
+.categories{
+  margin-left: 2%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25% ;
+  margin-top: 1em;
+}
+.cate{
+  width: 5em;
+  background-color: whitesmoke;
+  border: none;
+  box-shadow: 0 .1rem .4rem 0 black;
+  font-family:'Trebuchet MS' ;
+  color: rgb(98, 97, 97);
+  margin-top: .5em;
+  border-radius: 8px;
+}
+.cate:hover{
+  background-color: chocolate;
+  color: #151414;
+}
 
+.center{
+  text-align: center;
+}
 
 .nameSearch{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-    border-radius: 8px;
-    width: 17.25em;
-    height: 2.75em;
-    border: none;
-    background-color: whitesmoke;
-    box-shadow: 0 .1rem .4rem 0 black;
-    font-family: 'Trebuchet MS';
-    font-size: 1.05em;
-    text-align: center;
+  margin-top: 1em;
+  border-radius: 8px;
+  width: 17.25em;
+  height: 2.75em;
+  border: none;
+  background-color: whitesmoke;
+  box-shadow: 0 0 .6rem 0 black;
+  font-family: 'Trebuchet MS';
+  font-size: 1.05em;
+  text-align: center;
+  margin-left: 2.5%;
 }
 
+
 .searchIcon{
-  width: 2.75em;
-  height:2.75em;
+  width: 2.5em;
+  height:2.5em;
   margin-bottom: .20em;
-  margin-left: -3em;
-  border-radius: 10px;
+  margin-left: -2.7em;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 2px solid gray;
+  background-color: whitesmoke;
  }
+
+ .searchIcon:hover{
+  border-left: 2px solid black;
+  background-color: goldenrod;
+  cursor: pointer;
+ }
+
+
 .alerter{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
     text-align: center;
-   margin-top: 1.4em;
-   color:#361500;
+   color: rgb(38, 38, 38);
+   height:3em;
 }
+.oops{
+  width: 2em;
+  height: 2em;
+}
+
 .item-card-part1{
 margin: .8em auto .4em .20em;
  border-radius: 8px;
  box-shadow: 0 .3rem .4rem 0 black;
  width: 98%;
- height: 24.8em;
+ height: 23.5em;
 display: inline-block;
-background-image: url('https://img.freepik.com/free-vector/square-patterned-background_53876-93497.jpg?size=626&ext=jpg&uid=R89165474&ga=GA1.1.761342888.1672160419&semt=ais');
-background-position:92% 200%;
-background-size: contain;
+background-color: whitesmoke;
 
 }
 
@@ -318,7 +382,7 @@ background-size: contain;
    font-size: .85em;
     margin-left: -1.8em;
     margin-top: .5em;
-    color:rgb(200, 172, 130);
+    color:black;
     font-family: 'Comfortaa';
     letter-spacing: .07em;
     
@@ -326,16 +390,11 @@ background-size: contain;
 
 .spa{
   font-family: 'comfortaa';
-    color:rgb(168, 167, 167);
+    color:rgb(63, 80, 35);
   font-size: 1.05em;
   font-weight: bolder;
 }
 
-.findTag:hover{
-  color:black ;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 .deleteItemLogo{
   width: 1.55em;
@@ -345,13 +404,12 @@ background-size: contain;
   margin-right: .45em;
   cursor: pointer;
   z-index: 855;
-  background-color:rgb(201, 161, 133);
+  background-color:rgb(134, 139, 143);
   border-radius: 12px;
   box-shadow: 0 .1rem .3rem 0 black;
  
 }.deleteItemLogo:hover{
-  width: 1.6em;
-  height: 1.6em;
+ background-color: gainsboro;
 }
 
 .postBtn{
@@ -395,16 +453,7 @@ font-size: 1.6em;
     background-color: white;
     color: black;
     
-    }
-
-
-    .validate{
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      color: rgba(199, 0, 0, 0.884);
-      text-transform: capitalize;
-      text-align: left;
-     }
-         
+    } 
 
 
 
@@ -413,195 +462,32 @@ body {
   font-family: 'Trebuchet MS';
 }
 
-.navbar {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  background-color: #361500;
-  box-shadow: 0 .2em .5em 0 rgb(0, 0, 0);
-  width: 100%;
-  height:3.8em;
-  margin-left: 0;
-  z-index: 998;
-}
-
-.navbar .navbar-logo {
-  margin-left: -.5em;
- font-weight: 600;
-  color: chocolate;
-  text-decoration: none;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
-  font-size: 22px;
-  margin-top: .2em;
-}
-
-.navbar .navbar-logo span {
-  color: white;
-  font-weight: bold;
-}
-
-
- .menu-btn {
-  width: 2.3em;
-  float: right;
-  margin-right: -.3em;
-  margin-top: -0.20em;
-  cursor: pointer;
-}
-
-
-nav {
-  position: fixed;
-  z-index: 989;
-  width: 100%;
-  right: 0;
-  top:0;
-  background-color: rgba(255, 255, 255, 0.972);
-  height: 13em;
-  padding: 1em;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform .5s ease-in-out;
-  transition: -webkit-transform .5s ease-in-out;
-  transition: transform .5s ease-in-out;
-  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
-}
-
-nav .exit-btn {
-  margin-top: .25em;
-  width: 1.15em;
-  height: 1.2em;
-  cursor: pointer;
-  float: right;
-  margin-right:-.2em;
-  margin-bottom: .5em;
-}
-
-nav .navbar-menu {
-  margin-top: 2.9em;
-  text-align: center;
-  font-weight: bold;
-  margin-right: 1em;
-}
-
-nav .navbar-menu li {
-  color: #361500;
-  list-style-type: none;
-  text-decoration: none;
-  display: block;
-  cursor: pointer;
-  font-family: 'Comfortaa';
-  text-align: left;
-  margin-left: -1.75em;
-  font-weight: bold;
-  margin-top: 1.3em;
-  font-size: 1.25em;
-  border-bottom: 2px solid #361500;
-}
-nav .navbar-menu li:hover {
-  border-bottom: 2px solid chocolate;
-}
-
-nav .navbar-menu a {
-  color: black;
-  text-decoration: none;
-  margin-left: .7em;
-}
-
-
- nav.open-nav{
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-          -webkit-transition: -webkit-transform .5s ease-in-out;
-          transition: -webkit-transform .5s ease-in-out;
-          transition: transform .5s ease-in-out;
-          transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
-}
-
 
 @media only screen and (min-width: 640px) {
-  .menu-btn, .exit-btn {
-    display: none;
-  }
-  .navbar {
-    position:-webkit-sticky;
-    background-color:black;
-    box-shadow: 0 0 .5rem 0 white;
-  }
-  .navbar .navbar-logo span {
-    color: chocolate; 
-  }
-  .navbar .navbar-logo  {
-    color:white;
-    margin-top: .2em;
-    font-size: 22px;
-  }
-  .navbar-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: unset;
-  }
-  nav {
-    background: none;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 430px auto;
-        grid-template-columns: 400px auto;
-    position: unset;
-    height: auto;
-    width: 70%;
-    padding: .5em;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  nav ul.navbar-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    float: right;
-    margin-top: -1.3em;
-    position: absolute;
-    right: -5.5em;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  nav ul.navbar-menu li {
-   color: white;
-    font-weight: 300;
-    font-size: 1.1em;
-    float: right;
-    font-family:'Trebuchet MS';
-    margin-right: 4em;
-    margin-top: .8em;
-    border-bottom: none;
-  }
-  nav ul.navbar-menu li:hover {
-    border-bottom: none;
-  }
-  
-  nav ul.navbar-menu a {
-    text-decoration: none;
-    color: white;
-  }
-  
-nav .navbar-menu a:hover {
-border-bottom: 2px solid chocolate;
-}
+
+  .categories{
+    margin-left: .4%;
+     grid-template-columns: 12.5% 12.3% 12.5% 12.3% 12.5% 12.3% 12.5% 12.3%;
+   }
   .locationLogo{
    display: none;
   }
 }
 @media only screen and (min-width: 690px) {
 
-
+.categories{
+ margin-left: 1.5%;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+}
   section.marketing{
     box-shadow: none;
   }
-
+.cate{
+  color: gray;
+}
 .grid{
-  background-color: rgb(7, 7, 7);
+  margin-top: -2em;
+  background-color: white;
  display: flex;
   align-items: center;
  justify-content: center;
@@ -611,7 +497,7 @@ border-bottom: 2px solid chocolate;
    margin-right: -1em;
    width: 75%;
    float: right;
-   color: rgb(255, 255, 255);
+   color: rgb(41, 41, 41);
    border: none;
    box-shadow: none;
   }
@@ -621,19 +507,19 @@ border-bottom: 2px solid chocolate;
     
   }
   .event{
-    border-radius: 0px;
-    width: 150%;
-    margin-left: .5em;
+    width: 200%;
+    margin-left: 40%;
     margin-top: .3em;
     margin-bottom: .3em;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    box-shadow: 0 0 .3rem 0 rgba(245, 222, 179, 0.686);
+    box-shadow: 0 .4rem .3rem .5rem rgb(210, 153, 30);
+    border-radius: 100%;
+   
   }
  
   .cards{ 
+    margin-left: 1%;
       display: grid;
-        grid-template-columns:325px  auto;
+        grid-template-columns:50%  50%;
     }
     .item-card-part1{
       width: 20em;
@@ -641,9 +527,15 @@ border-bottom: 2px solid chocolate;
   }
 @media only screen and (min-width: 1015px) {
 .cards{ 
+  margin-left: 1%;
     display: grid;
-      grid-template-columns:325px 325px auto;
+      grid-template-columns:33% 33% 33%;
   }
+
+  .categories{
+    margin-left: 2.5%;
+   }
+
   .item-card-part1{
     width: 20em;
     margin-left: .4em;
@@ -651,17 +543,15 @@ border-bottom: 2px solid chocolate;
 }
 @media only screen and (min-width: 1340px) {
     .cards{ 
+      margin-left: 1%;
         display: grid;
-          grid-template-columns:325px 325px 325px auto;
+          grid-template-columns: 25% 25% 25% 25% ;
       }
+      .categories{
+        margin-left: 3.5%;
+       }
     }
-    @media only screen and (min-width: 1665px) {
-        .cards{ 
-            display: grid;
-              grid-template-columns:325px 325px 325px 325px auto;
-          }
-        }
-              
+   
   @media only screen and (min-width: 630px) {
                 
 

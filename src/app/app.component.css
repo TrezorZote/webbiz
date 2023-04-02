@@ -9,7 +9,7 @@ section.marketing p  {
   font-family: 'Poppins';
   font-weight: 900;
   font-size: 1.05em;
-  color: black;
+  color: rgb(42, 42, 42);
 }
 
 h4{ 
@@ -180,7 +180,7 @@ display: grid;
 grid-template-columns: 23% 22% 22% 19% 22% ;
 }
 .clothLogo{
-  box-shadow: 0 0 0 .3rem #361500;
+  box-shadow: 0 0 0 .2rem #361500;
   background-color: #361500;
   border-radius: 100%;
   width: 1.95em;
@@ -191,10 +191,10 @@ grid-template-columns: 23% 22% 22% 19% 22% ;
 
 .laptopSell{
   background-color: #361500;
-  box-shadow: 0 0 0 .3rem #361500;
+  box-shadow: 0 0 0 .2rem #361500;
   border-radius: 100%;
-  width: 1.9em;
-  height: 1.9em;
+  width: 2em;
+  height: 2em;
   margin-top: 2em;
 }
 
@@ -206,7 +206,7 @@ grid-template-columns: 23% 22% 22% 19% 22% ;
 }
 
 .carLogo{
-  box-shadow: 0 0 0 .3rem #361500;
+  box-shadow: 0 0 0 .2rem #361500;
   background-color: #361500;
   border-radius: 100%;
   width: 2em;
@@ -215,7 +215,7 @@ grid-template-columns: 23% 22% 22% 19% 22% ;
 }
 
 .houseLogo{
-  box-shadow: 0 0 0 .3rem #361500;
+  box-shadow: 0 0 0 .2rem #361500;
   background-color: #361500;
   border-radius: 100%;
   width: 1.95em;
@@ -408,15 +408,18 @@ body {
   cursor: pointer;
 }
 
-
+.side{
+  width: 1.5em;
+  height: 1.5em;
+}
 nav {
   position: fixed;
   z-index: 989;
   width: 100%;
   right: 0;
   top:0;
-  background-color: rgba(255, 255, 255, 0.972);
-  height: 18em;
+  background-color: rgb(255, 255, 255);
+  height: 20em;
   padding: 1em;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -454,7 +457,7 @@ nav .navbar-menu li {
   margin-left: -1.75em;
   font-weight: bold;
   margin-top: 1.3em;
-  font-size: 1.25em;
+  font-size: 1.1em;
   border-bottom: 2px solid #361500;
 }
 nav .navbar-menu li:hover {
@@ -484,7 +487,6 @@ nav .navbar-menu a {
   }
   .navbar {
     position:-webkit-sticky;
-    
     background-color:black;
     box-shadow: 0 0 .5rem 0 #361500;
   }
@@ -625,14 +627,13 @@ nav .navbar-menu a:hover {
 }
 
 .footer-section{
-  position: fixed;
+position: relative;
   width: 100%;
   background-color: #151414;
   padding: 1em;
-  margin: auto 0;
+  margin-top: 0em;
   bottom: 0;
-  z-index: -1;
-  
+  z-index: 0;
 }
 .footer-section span{
  color: rgb(138, 138, 138);

@@ -1,6 +1,7 @@
 export class Worker{
-    constructor(contact:number,jobtitle:string,
+    constructor(id:number,contact:number,jobtitle:string,
         specialty: string,workZone:string,password:number,email:string){
+            this.id=id;
         this.contact=contact;
         this.jobtitle=jobtitle;
         this.specialty=specialty;
@@ -8,6 +9,7 @@ export class Worker{
         this.workZone=workZone;
         this.email=email;
     }
+    id:number;
     contact:number;
     jobtitle:string;
     specialty:string;

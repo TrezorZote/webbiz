@@ -10,7 +10,7 @@
     <section class="marketing">
       <div class="grid">
         <div>
-        <img class="event" src="https://img.freepik.com/free-vector/e-commerce-background_23-2147507979.jpg?size=338&ext=jpg&uid=R89165474&ga=GA1.1.761342888.1672160419&semt=ais" alt="">
+        <img class="event" src="https://img.freepik.com/free-vector/online-shopping-concept-landing-page_52683-22153.jpg?size=626&ext=jpg&ga=GA1.1.761342888.1672160419&semt=ais" alt="">
         </div>
       <div class="logoss">
      <img class="clothLogo" src="https://cdn-icons-png.flaticon.com/128/2935/2935183.png" alt="">
@@ -19,7 +19,8 @@
      <img class="houseLogo" src="https://cdn-icons-png.flaticon.com/128/602/602225.png" alt="">
      <img class="laptopSell" src="https://cdn-icons-png.flaticon.com/128/187/187496.png" alt="">
     </div>
-    <div class="p">
+    <div class="par">
+      <h3>Ecommerce WebApp</h3>
     <P> This is an example of an E-commerce <sup>WebApp</sup> where you can advertise and find interesting things on sale. The
       Phone Numbers of different Sellers are available for contacting.
        Start advertising your products by posting photos click on this sell button.
@@ -41,7 +42,8 @@
         <div><button  class="cate"  (click)="setCategory('women')" >free</button></div>
         <div><button  class="cate"  (click)="setCategory('sport')" >xchange</button></div>
         <div class="cent"><button  class="cate"  (click)="setCategory('device')" >vehicle</button></div>
-      </section> 
+      </section>
+    
 <br>
 <form>
   <div class="center">
@@ -50,7 +52,7 @@
 </form>
 <div *ngIf="productsArray?.length==0" class="noItems">
  <div class="alerter" role="alert">
-   <h4 class="alerter" ><img class="oops" src="https://cdn-icons-png.flaticon.com/128/2341/2341885.png" alt=""> Sorry Items not Found! page will reload in a bit</h4>
+   <h4 ><img class="oops" src="https://cdn-icons-png.flaticon.com/128/2341/2341885.png" alt=""> Sorry Items not Found! page will reload in a bit</h4>
 </div>
 </div>
 
@@ -161,8 +163,8 @@
    <button  type="button" class="closeDelete" data-dismiss="modal" aria-label="close">
      <span aria-hidden="true">&times;</span>
    </button>
-   <div *ngIf="corb.length==0"> <h4> <img class="oops" src="https://cdn-icons-png.flaticon.com/128/9018/9018889.png" alt="">  No items in corb</h4>
-  <p style="text-align: left;"> click plus icon on product card to add items here </p></div>
+   <div *ngIf="corb.length==0" class="empty">  <h4> <img class="oops" src="https://cdn-icons-png.flaticon.com/128/9018/9018889.png" alt="">  No items in corb</h4>
+  <p> click plus icon on product card to add items here </p></div>
    <section class="cards" id="main-container">
     <div *ngFor="let itemsInCorb of corb"   class="item-container1">
      <div class="item-row">

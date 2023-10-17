@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comforter+Brush&family=Monoton&family=Road+Rage&family=Style+Script&family=Vesper+Libre&display=swap');
+
+body{
+  background-color: whitesmoke;
+}
+
+.frontpage{
+  background: linear-gradient(45deg ,  white 80%,  wheat 85%, plum 95%);
+    margin:.5em .5em .5em .5em;
+    box-shadow: 0 0 1rem 0 black;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.par{
+    padding: 2.5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2em;
+  }
+  .par h3{
+    max-width: 100%;
+    text-align: center;
+   font-weight: bold;
+    color:chocolate;
+    font-family: 'Laila', cursive;
+  }
+  .par p{
+    font-family: 'Poppins', cursive;
+    font-weight: 900;
+    font-size: 1.05em;
+    color:#4d4d4d;
+  }
+
+  .par span{
+    color: chocolate;
+    font-weight: bold;
+  }
+
+
+.mark {
+    background: white;
+    margin: 3em auto 2.5em 0;
+    padding: 1em;
+    box-shadow: 0 0 .5rem 0 black;
+    width: 100%;
+  }
+  
+  .mark h2 {
+    text-align: center;
+    padding-left: .5em;
+    margin: -2.5em auto 1em -.5em;
+    color: #383838;
+    font-size: 1.25em;
+    font-family: 'Trebuchet MS';
+  }
+  .close {
+   font-size: 2.5em;
+   margin: -1.4em 0 auto auto;
+    cursor: pointer;
+  }
+  
+  .oops{
+    width: 1.8em;
+    height: 1.8em;
+  }
+  
+  
+  .li{
+    width: 1.3em;
+    height: 1.3em;
+  }
+  .mark label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-weight: bold;
+    color:black;
+    font-family: 'Poppins';
+  }
+  
+  .mark label span {
+    color: var(--primary-color);
+  }
+  
+  .mark input{
+    border-bottom: 3px solid #313131;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 0;
+    width: 100%;
+    height: 2.5em;
+    font-family: 'Poppins';
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .mark textarea {
+    border: none;
+    margin-bottom: .3em;
+    box-shadow: 0 0 .5rem 0 black;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-family: 'Poppins';
+    font-size: 1em;
+    font-weight: bold;
+  }
+  input[type="file"]{
+    display: none;
+  }
+  
+ 
+  .material-icons{
+   margin-top: .25em;
+   }
+  
+   .postBtn{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 150px auto;
+    }
+  
+  .submit {
+  color: #a0a0a0;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 .2rem .4rem 0 black ;
+  border: none;
+  width: 4.7em;
+  margin:1.5em 2.5em auto .5em ;
+  background-color: #333333 ;
+  font-weight: 600;
+  height: 2em;
+  
+  }
+  
+    .submit:hover {
+      color: gainsboro;
+      }
+      
+  
+
+      .items-attributes {
+        list-style-type: none;
+       font-weight: 800;
+       font-size: .85em;
+        margin-left: -1.8em;
+        margin-top: 1em;
+        color:gainsboro;
+        font-family: 'Comfortaa';
+        letter-spacing: .07em;
+    }
+    .it-attributes{
+      list-style-type: none;
+     margin-top: .5em;
+    }
+    .call{
+      width: 2em;
+      height: 2em;
+    }
+    
+    .more{
+      text-align: center;
+    }
+    
+    .spa{
+      font-family: 'comfortaa';
+        color:#909090;
+      font-size: 1.05em;
+      font-weight: bolder;
+    }
+   
+    .acct{
+      padding: .5em;
+      text-align: left;
+      background: linear-gradient(253deg,#232323 0%,#2a2a2a 23%,#313131 74%) ;
+    }
+    
+.account-holder{
+    display: grid;
+    grid-template-columns: 3px;
+    justify-content: space-between;
+}
+.transactions{
+    text-align: center;
+    align-items: center;
+    width: 20em;
+    height: 11em;
+    background: linear-gradient(235deg ,  #202020 10%,  #232323 83%);
+    border-radius: 4px;
+    font-family: 'Poppins';
+    margin:1em auto 1em auto;
+    box-shadow: 0 0 .5rem 0 black;
+    padding: 1em;
+}
+
+.transaction-container{
+    margin:1.5em auto 1em auto ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.transaction-container h4{
+  margin:1.5em auto 1em auto ;
+  color: #383838;
+}
+
+.event{
+    object-fit: contain;
+    width: 100%;
+   background-color: transparent;
+  }
+
+  .accountLogo{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100%;
+    margin-left: 0;
+  }
+   .account-top{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 20px 20px auto;
+    box-shadow: 0 0 .3rem 0 black;
+   background: linear-gradient(253deg,#232323 0%,#2a2a2a 23%,#313131 74%) ;
+    padding: .5em;
+  }
+
+  .balance{
+    list-style-type: none;
+       font-weight: bold;
+       font-size: .85em;
+        margin-left: 2.5em;
+        margin-top: .1em;
+        color:chocolate;
+        font-family: 'Comfortaa';
+        letter-spacing: .07em;
+  }
+
+  .money{
+    font-family: 'comfortaa';
+    color:gainsboro;
+    font-size: 1em;
+    font-weight: bolder;
+    margin-left: .3em;
+  }
+
+  h5{
+    text-align: center;
+    color: chocolate;
+    font-weight: bolder;
+    
+  }
+  .box{
+    text-align: center;
+    align-items: center;
+    margin: 1.5em auto 1.5em auto;
+    width: 20em;
+    height: 7.5em;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    background: linear-gradient(90deg ,  white 53%,  beige 83%);
+    box-shadow: 0 0 .5rem 0 black;
+    cursor: pointer;
+    padding: 1em;
+  }
+  .box p{
+    text-align: center;
+   font-family: 'Poppins';
+   color: #4d4d4d;
+   font-weight: bolder;
+  }
+  
+  .box:hover{
+    background: linear-gradient(90deg ,  white 53%,  wheat 83%);
+  }
+
+  .image{
+    width: 2em;
+    height: 2em;
+    background-color: chocolate;
+    border-radius: 100%;
+  }
+
+.euro{
+    width: 1em;
+    height: 1em;
+}
+
+@media only screen and (min-width: 870px) {
+
+
+  .grid{
+   display: flex;
+    align-items: center;
+   justify-content: center;
+  }
+
+  
+
+  .box{
+    width: 16em;
+    height: 8em;
+  }
+    .event{
+      width: 40%;
+     margin: auto auto auto 1%;
+     height: 25em;
+    }
+   
+    .par p{
+        font-size: 125%;
+       max-width: 85%;
+       float: right;
+       color: #4d4d4d;
+       border: none;
+       box-shadow: none;
+      }
+    }

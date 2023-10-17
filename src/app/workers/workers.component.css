@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comforter+Brush&family=Monoton&family=Road+Rage&family=Style+Script&family=Vesper+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laila&family=Neucha&family=Permanent+Marker&family=Strait&display=swap');
 section.marketing {
   background: white;
   margin: .5em .5em .5em .5em;
@@ -9,13 +10,23 @@ section.marketing {
 }
 
 section.marketing p  {
-  padding: 2em;
-  text-align: center;
-  margin: 1em .9em auto 1em;
   font-family: 'Poppins';
   font-weight: 900;
   font-size: 1.05em;
   color: rgb(51, 51, 51);
+}
+
+.par{
+  padding: 2.5em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.par h3{
+  text-align: center;
+ font-weight: bold;
+  color:rgb(176, 134, 27);
+  font-family: 'Laila', cursive;
 }
 
 .loco{
@@ -164,7 +175,7 @@ height: 2em;
       }
 
 .sell{
-  background-color: rgb(19, 95, 91);
+  background-color: darkkhaki;
   border-radius: 100%;
   box-shadow: 0 .1rem .5rem 0 white;
   width: 1.7em;
@@ -172,7 +183,7 @@ height: 2em;
   cursor: pointer;
 }
 .sell:hover{
-  background-color: goldenrod;
+  background-color: darkorange;
 
 }
 
@@ -208,8 +219,9 @@ section.contact-right iframe {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
   width: 100%;
+  height: 20em;
+  margin: auto;
 }
-
 
 .logoss{
   align-self: center;
@@ -277,14 +289,13 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
   margin-left: -2.5em;
  border-left: 2px solid gray;
   color: rgb(32, 32, 32);
-  
-}
-.regionFilter:hover{
+  background: linear-gradient(45deg ,  white 5%,  khaki 20%,darkkhaki 68%);
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-left: 2px solid black;
-  background-color: rgb(19, 95, 91);
-  color: whitesmoke;
+}
+.regionFilter:hover{
+  background: linear-gradient(45deg ,  white 10%,  goldenrod 48%);
+  cursor: pointer;
 }
 
 .center{
@@ -298,7 +309,7 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
     height: 2.75em;
     border: none;
     background-color: whitesmoke;
-    box-shadow: 0 0 .6rem 0 black;
+    box-shadow: 0 0 .6rem 0 #333333;
     font-family: 'Trebuchet MS';
     font-size: 1.05em;
     text-align: center; 
@@ -312,7 +323,7 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
     height: 2.75em;
     border: none;
     background-color: whitesmoke;
-    box-shadow: 0 0 .6rem 0 black;
+    box-shadow: 0 0 .6rem 0 #333333;
     font-family: 'Trebuchet MS';
     font-size: 1.05em;
     text-align: center;
@@ -327,11 +338,10 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border-left: 2px solid gray;
-  background-color: whitesmoke;
+  background: linear-gradient(45deg ,  white 5%,  khaki 20%,darkkhaki 68%);
  }
  .searchIcon:hover{
-  border-left: 2px solid black;
-  background-color: rgb(19, 95, 91);
+  background: linear-gradient(45deg ,  white 10%,  goldenrod 28%);
   cursor: pointer;
  }
 
@@ -468,195 +478,15 @@ body {
   font-family: 'Trebuchet MS';
 }
 
-.navbar {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  background-color: #361500;
-  box-shadow: 0 .2em .5em 0 rgb(0, 0, 0);
-  width: 100%;
-  height:3.8em;
-  margin-left: 0;
-  z-index: 998;
-}
-
-.navbar .navbar-logo {
-  margin-left: -.5em;
- font-weight: 600;
-  color: chocolate;
-  text-decoration: none;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
-  font-size: 22px;
-  margin-top: .2em;
-}
-
-.navbar .navbar-logo span {
-  color: white;
-  font-weight: bold;
-}
 
 
- .menu-btn {
-  width: 2.3em;
-  float: right;
-  margin-right: -.3em;
-  margin-top: -0.20em;
-  cursor: pointer;
-}
 
 
-nav {
-  position: fixed;
-  z-index: 989;
-  width: 100%;
-  right: 0;
-  top:0;
-  background-color: rgba(255, 255, 255, 0.972);
-  height: 13em;
-  padding: 1em;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform .5s ease-in-out;
-  transition: -webkit-transform .5s ease-in-out;
-  transition: transform .5s ease-in-out;
-  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
-}
 
-nav .exit-btn {
-  margin-top: .25em;
-  width: 1.15em;
-  height: 1.2em;
-  cursor: pointer;
-  float: right;
-  margin-right:-.2em;
-  margin-bottom: .5em;
-}
-
-nav .navbar-menu {
-  margin-top: 2.9em;
-  text-align: center;
-  font-weight: bold;
-  margin-right: 1em;
-}
-
-nav .navbar-menu li {
-  color: #361500;
-  list-style-type: none;
-  text-decoration: none;
-  display: block;
-  cursor: pointer;
-  font-family: 'Comfortaa';
-  text-align: left;
-  margin-left: -1.75em;
-  font-weight: bold;
-  margin-top: 1.3em;
-  font-size: 1.25em;
-  border-bottom: 2px solid #361500;
-}
-nav .navbar-menu li:hover {
-  border-bottom: 2px solid chocolate;
-}
-
-nav .navbar-menu a {
-  color: black;
-  text-decoration: none;
-  margin-left: .7em;
-}
-
-
- nav.open-nav{
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-          -webkit-transition: -webkit-transform .5s ease-in-out;
-          transition: -webkit-transform .5s ease-in-out;
-          transition: transform .5s ease-in-out;
-          transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
-}
-
-
-@media only screen and (min-width: 640px) {
-  .menu-btn, .exit-btn {
-    display: none;
-  }
-  .navbar {
-    position:-webkit-sticky;
-    background-color:black;
-    box-shadow: 0 0 .5rem 0 white;
-  }
-  .navbar .navbar-logo span {
-    color: chocolate; 
-  }
-  .navbar .navbar-logo  {
-    color:white;
-    margin-top: .2em;
-    font-size: 22px;
-  }
-  .navbar-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: unset;
-  }
-  nav {
-    background: none;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 430px auto;
-        grid-template-columns: 400px auto;
-    position: unset;
-    height: auto;
-    width: 70%;
-    padding: .5em;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  nav ul.navbar-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    float: right;
-    margin-top: -1.3em;
-    position: absolute;
-    right: -5.5em;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  nav ul.navbar-menu li {
-   color: white;
-   font-weight: 300;
-    font-size: 1.1em;
-    float: right;
-    font-family:'Trebuchet MS';
-    margin-right: 4em;
-    margin-top: .8em;
-    border-bottom: none;
-  }
-  nav ul.navbar-menu li:hover {
-    border-bottom: none;
-  }
-  
-  nav ul.navbar-menu a {
-    text-decoration: none;
-    color: white;
-  }
-  
-nav .navbar-menu a:hover {
- border-bottom: 2px solid chocolate;
-}
-  .locationLogo{
-   display: none;
-  }
-}
 @media only screen and (min-width: 690px) {
-
-  section.marketing{
-    box-shadow: none;
-  }
 
 .grid{
   margin-top: -1em;
-  background-color: white;
  display: flex;
   align-items: center;
  justify-content: center;
@@ -671,13 +501,10 @@ nav .navbar-menu a:hover {
    box-shadow: none;
   }
 
-  .p{
-    margin-top: 0%;
-    
-  }
+  
   .event{
-    width: 195%;
-    margin-left: .5em;
+    width: 145%;
+    margin-left: 2.5em;
     margin-top: .3em;
     margin-bottom: .3em;
    
@@ -693,6 +520,10 @@ nav .navbar-menu a:hover {
      }
   }
 @media only screen and (min-width: 1015px) {
+
+  section.marketing{
+    background: linear-gradient(45deg ,  white 83%,  rgb(255 233 106) 88%, cyan 108%);
+   }
 .cards{ 
   margin-left: 1%;
   display: grid;
@@ -719,34 +550,9 @@ nav .navbar-menu a:hover {
  
  }
  
- .clothLogo{
+.logoss{
   display: none;
- }
- 
- .laptopSell{
-  display: none;
- }
- 
- .phoneSell{
- display: none;
- }
- 
- .dressLogo{
-  display: none;
- }
- .carLogo{
-  display: none;
- }
- .phoneLogo{
-  display: none;
- }
- .houseLogo{
-  display: none;
- }
- .laptopLogo{
-  display: none;
- }
-     
+}
 }
 
 .footer-section{

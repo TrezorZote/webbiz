@@ -19,7 +19,8 @@
    <img class="carLogo"  src="https://cdn-icons-png.flaticon.com/128/2534/2534679.png" alt="">
    <img class="laptopSell" src="https://cdn-icons-png.flaticon.com/128/1041/1041023.png" alt="">
  </div>
- <div class="p">
+ <div class="par">
+  <h3>Hotel WebApp</h3>
 <P> This is an example of a accomodation <sup>WebApp</sup> 
  that enables you find accomodations in specific regions. Post your accomodations by clicking the button
  <img (click)="onOpenModal('create')" class="sell"   src="https://cdn-icons-png.flaticon.com/128/5176/5176373.png"  alt=""> 
@@ -161,6 +162,7 @@
 </div>
 </div>
 
+
 <!--edit hotel example-->
 <div class="modal fade" id="edithotel" tabindex="-1" role="dialog" aria-labelledby="editHotel" aria-hidden="true">
 <div class="modal-dialog" role="document">
@@ -217,6 +219,7 @@
 <div  class="modal fade" id="moreInfo" tabindex="-1" role="dialog" aria-labelledby="updateHotel" aria-hidden="true">
 <div  class="modal-dialog" role="document" style="background-color: white; margin-top: 3em;margin-left: .5em; height: 11em;">
   <div class="modal-content" >
+    <div class="mark">
     <button  type="button" class="closeDelete" data-dismiss="modal" aria-label="close">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -233,11 +236,12 @@
     <div *ngIf="staydates.length!=0">
      <div *ngFor="let stay of staydates" class="center">
        <ol class="dateList">
-       <li><img class="li" src="https://cdn-icons-png.flaticon.com/128/5839/5839078.png" alt="">  {{stay}}</li>
+       <li><img class="li" src="https://cdn-icons-png.flaticon.com/128/10559/10559357.png" alt="">  {{stay}}</li>
      </ol>
      </div>
     </div>
   </div>
+</div>
   </div>
 </div>
 </div>

@@ -1,0 +1,207 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="account.component.css">
+
+
+<body>
+    <section id="main-container" class="frontpage">
+        <div class="grid">
+        <img class="event"  src="https://img.freepik.com/free-vector/employees-cv-candidates-resume-corporate-workers-students-id-isolate-flat-design-element-job-applications-avatars-personal-information_335657-145.jpg?size=626&ext=jpg" alt="">
+        <div class="par">
+            <h3>Account WebApp</h3>
+            <P >this is an example of an Account<sup>WebApp</sup> 
+                make deposits transfers and receive money from here easily.
+                create a temporary Account by clicking on sign in button or log into our made account with  
+               <span> password: 12345</span> and<span>  email: temliz </span> 
+                transfer money to another account using this <span>contact: 232323</span> and enter thesame password from above. afterwards
+                you will notice balance and transaction updates.
+           </P>
+          </div>
+        </div>
+        <div class="postBtn" *ngIf="account.loggedIn==false">
+            <button id="togo" (click)="onOpenModal('log')" class="submit" >Login</button>
+            <button id="togo" (click)="onOpenModal('sign')" class="submit">Sign in</button>
+            </div>
+            <br>
+            <div class="grid" *ngIf="account.loggedIn==true">
+        <div class="box" (click)="onOpenModal('transac')">
+            <h5>transactions</h5>
+            <img class="image" src="https://cdn-icons-gif.flaticon.com/11629/11629954.gif" alt="">
+        <p>view your transactions here</p>
+    </div>
+        <div class="box"  (click)="onOpenModal('info')">
+            <h5>account details</h5>
+            <img class="image" src="https://cdn-icons-gif.flaticon.com/11186/11186790.gif" alt="">
+        <p>view your account details here </p>
+    </div>
+        <div class="box" (click)="onOpenModal('transfer')">
+            <h5>Transfer</h5> 
+            <img class="image" src="https://cdn-icons-gif.flaticon.com/11614/11614849.gif" alt="">
+            <p>send money to others here</p>
+        </div>
+    </div>
+   <div><br></div>
+    </section>
+
+   
+
+    <!-- sign in dialog-->
+    <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="createHotel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="mark">
+          <h2>Add an Account</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="close" id="diss">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <form>
+            <label for="name"> name </label>
+           <input type="text" id="name" #name="ngModel" ngModel name="name" placeholder="firstname and lastname... " maxlength="28">
+           
+           
+           <label for="address"> location </label>
+           <input type="text" id="address" #address="ngModel" ngModel name="address"  placeholder="address and house nr..." maxlength="65">
+           
+           <label for="email"> email </label>
+           <input type="text" id="email" #email="ngModel" ngModel name="email"  placeholder="like banga@gmail.com..." maxlength="65">
+           
+          
+           <label for="contact"> Tel <span>:</span></label>
+           <input type="tel" id="contact" #contact="ngModel" ngModel name="contact" placeholder="enter atleast 9 figures">
+          
+            <label for="HotelPassword"> Password  <span>(for deleting)</span></label>
+           <input type="number" #passwor="ngModel" ngModel name="passwor" id="HotelPassword"  placeholder="atleast 8 figures" >
+           
+           <div class="postBtn">
+             <button  class="submit" (click)="signin(name.value,address.value,email.value,contact.value,passwor.value)">sign in</button>
+             <button class="submit" type="reset">clear</button>
+           </div>
+          </form>
+        </div>
+        </div>
+        </div>
+        </div>
+  
+        <!-- login dialog-->
+   <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="createHotel"  aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+    <div class="mark">
+        <h2>Login to Account</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="close" id="dismiss">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <form>
+          <label for="email"> Email </label>
+          <input type="text" placeholder="Enter your email" #emailw="ngModel" ngModel name="emailw">
+          <label for="password"> Password </label>
+          <input type="number" placeholder="Enter your password" #passw="ngModel" ngModel name="passw">
+          <a href="#">Forgot password?</a>
+          <div class="postBtn">
+            <button (click)="accountlogin(passw.value,emailw.value)" class="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <!-- personal info-->
+    <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="createHotel"  aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+        <div class="mark">
+            <h2>Account information</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="close" id="out">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="account-top">
+                <img class="accountLogo" src="https://cdn-icons-gif.flaticon.com/11679/11679135.gif" alt="">
+                <li class="balance"><i></i> Balance <span class="money"> {{account.balance}}$</span></li>
+            </div>
+              <div class="acct">
+                <ul class="items-attributes">
+                    <li  class="it-attributes"><i></i>Name <span class="spa"> {{account.name}}</span></li>
+                    <li   class="it-attributes"><i></i>Email <span class="spa"> {{account.email}}</span></li>
+                    <li class="it-attributes"><i></i>Tel <span class="spa"> {{account.contact}}</span></li>
+                    <li  class="it-attributes"><i></i>address <span class="spa"> {{account.adress}}</span></li>
+                </ul>
+            </div>
+            <div class="postBtn">
+              <button id="togo" (click)="accountlogout()" class="submit" >logout</button>
+              </div>
+          </div> 
+        </div>
+      </div>
+        </div>
+   
+
+
+        <!-- personal transactions-->
+    <div class="modal fade" id="transac" tabindex="-1" role="dialog" aria-labelledby="createHotel"  aria-hidden="true" >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+        <div class="mark">
+            <h2>Account transactions</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="close" id="transout">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="transaction-container" >
+              <p>here are all your recent transactions</p>
+              <div *ngIf="account.transactions.length==0">
+                <h4> No transactions available yet </h4>
+              </div>
+                <div *ngFor="let transaction of account.transactions">
+                    <div class="transactions">
+                        <ul class="items-attributes">
+                        <li class="it-attributes"><i></i>Amount sent <span class="spa"> {{transaction?.sent}}$</span></li> 
+                        <li class="it-attributes"><i></i>Amount received <span class="spa"> {{transaction?.received}}$</span></li>  
+                        <li class="it-attributes"><i></i>description <span class="spa"> {{transaction?.description}}</span></li> 
+                        <li class="it-attributes"><i></i>date <span class="spa"> {{transaction?.date}}</span></li> 
+                    </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+
+      <!--transfer--> 
+      <div class="modal fade" id="transfer" tabindex="-1" role="dialog" aria-labelledby="createHotel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="mark">
+          <h2>Transfer Money</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="close" id="transferout">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <p style="text-align: center;">transfer money to another account using this <span style="color: chocolate;">contact: 232323</span> and enter thesame password 12345</p>
+          <form>
+            <label for="contact"> Receiver contact <span>:</span></label>
+           <input type="number" id="contact" #contactt="ngModel" ngModel name="contactt" placeholder="enter atleast 9 figures">
+           
+           <label for="amount"> Amount </label>
+           <input type="number" #amount="ngModel" ngModel name="amount" id="amount"  placeholder="enter atleast 5$" >
+           
+
+           <label for="transferdescription"> description</label>
+           <textarea  id="productDescription" #transDesc="ngModel" ngModel name="transDesc"  placeholder="reason for transfer..." rows="3" cols="24" maxlength="35"></textarea>
+          
+
+            <label for="HotelPassword"> Password </label>
+           <input type="number" #passt="ngModel" ngModel name="passt" id="password"  placeholder="enter your password..." >
+           
+
+           <div class="postBtn">
+             <button  class="submit" (click)="transfer(contactt.value,amount.value,transDesc.value,passt.value)">Send</button>
+             <button class="submit" type="reset">clear</button>
+           </div>
+          </form>
+        </div>
+        </div>
+        </div>
+        </div>
+  
+  
+</body>

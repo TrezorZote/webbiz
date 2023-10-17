@@ -1,23 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comforter+Brush&family=Monoton&family=Road+Rage&family=Style+Script&family=Vesper+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laila&family=Neucha&family=Permanent+Marker&family=Strait&display=swap');
 section.marketing {
-  background: white;
+ background-color: white;
   margin: .5em .5em .5em .5em;
   box-shadow: 0 0 1rem 0 black;
   border-radius: 8px;
 }
 
 section.marketing p  {
-  padding: 2em;
-  text-align: center;
-  margin: 1em .9em auto 1em;
-  font-family: 'Poppins';
+  align-items: center;
+  justify-content: center;
+  margin: auto auto auto 1em;
+  font-family: 'Poppins', cursive;
   font-weight: 900;
   font-size: 1.05em;
-  color: rgb(29, 29, 29);
+  color:#4d4d4d;
 }
 
+.par{
+  padding: 2.5em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.par h3{
+  max-width: 100%;
+  text-align: center;
+ font-weight: bold;
+ color: darkmagenta;
+  font-family: 'Laila', cursive;
+}
 h4{ 
   font-family: 'Poppins';
   font-weight: 700;
@@ -52,16 +66,15 @@ h4{
 }
 
 .sell{
-  background-color: rgb(99, 152, 20);
+  background-color: plum;
   border-radius: 100%;
   box-shadow: 0 .1rem .5rem 0 gray;
-  width: 1.7em;
+  width: 1.7e;
   height: 1.7em;
   cursor: pointer;
 }
 .sell:hover{
   background-color: grey;
-
 }
 
 
@@ -261,15 +274,18 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
    height: 2.5em;
    margin-left: -2.5em;
   border-left: 2px solid gray;
-   color: rgb(47, 47, 47);
+   color: rgb(40, 40, 40);
+   background: linear-gradient(45deg ,  white 5%,plum 20%,  wheat 80%);
+   border-top-right-radius: 8px;
+   border-bottom-right-radius: 8px;
    
  }
  .regionFilter:hover{
    border-top-right-radius: 8px;
    border-bottom-right-radius: 8px;
    border-left: 2px solid black;
-   background-color: rgb(99, 152, 20);
-   color: whitesmoke;
+   color: black;
+   background: linear-gradient(45deg ,  white 5%,orchid 20%,  goldenrod 80%);
  }
 
  .call{
@@ -291,7 +307,7 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
      height: 2.75em;
      border: none;
      background-color: whitesmoke;
-     box-shadow: 0 0 .6rem 0 black;
+     box-shadow: 0 0 .6rem 0 #333333;
      font-family: 'Trebuchet MS';
      font-size: 1.05em;
      text-align: center; 
@@ -305,7 +321,7 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
   height: 2.75em;
   border: none;
   background-color: whitesmoke;
-  box-shadow: 0 0 .6rem 0 black;
+  box-shadow: 0 0 .6rem 0 #333333;
   font-family: 'Trebuchet MS';
   font-size: 1.05em;
   text-align: center;
@@ -320,12 +336,12 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border-left: 2px solid gray;
-  background-color: whitesmoke;
+  background: linear-gradient(45deg ,  white 5%,plum 20%,  wheat 80%);
  }
 
  .searchIcon:hover{
   border-left: 2px solid black;
-  background-color: rgb(99, 152, 20);
+  background-color: gray;
   cursor: pointer;
  }
 
@@ -343,7 +359,7 @@ margin: .8em auto .4em .20em;
  width: 98%;
  height: 23.5em;
 display: inline-block;
-background-color: whitesmoke;
+background: linear-gradient(135deg ,  whitesmoke 90%,  plum 95%, wheat 100%);
 }
 
 
@@ -363,7 +379,6 @@ background-color: whitesmoke;
 }
 
 .event{
-  
   object-fit: contain;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -400,7 +415,7 @@ background-color: whitesmoke;
   margin-right: .45em;
   cursor: pointer;
   z-index: 855;
-  background-color:olivedrab;
+  background-color:plum;
   border-radius: 12px;
  
 }.deleteItemLogo:hover{
@@ -465,10 +480,7 @@ body {
 }
 @media only screen and (min-width: 690px) {
 
-  section.marketing{
-    box-shadow: none;
-  }
-
+ 
 .grid{
  display: flex;
   align-items: center;
@@ -483,18 +495,12 @@ body {
    border: none;
    box-shadow: none;
   }
-
-  .p{
-    margin-top: 0%;
-    
-  }
+  
   .event{
-    border-radius: 100%;
-    width: 190%;
-    margin-left: .5em;
-    margin-top: .3em;
-    margin-bottom: .3em;
-    box-shadow: 0 0 .3rem .5rem rgb(255, 115, 0);
+    width: 180%;
+    height: 25em;
+   margin: auto auto auto 1%;
+   background-color: transparent;
   }
   .cards{ 
     margin-left: 1%;
@@ -506,7 +512,10 @@ body {
      }
   }
 @media only screen and (min-width: 1015px) {
-
+ 
+  section.marketing{
+    background: linear-gradient(45deg ,  white 83%,  plum 88%, orange 98%);
+   }
   .cards{ 
     margin-left: 1%;
     display: grid;
@@ -533,34 +542,8 @@ body {
  
  }
  
- .clothLogo{
-  display: none;
- }
- 
- .laptopSell{
-  display: none;
- }
- 
- .phoneSell{
- display: none;
- }
- 
- .dressLogo{
-  display: none;
- }
- .carLogo{
-  display: none;
- }
- .phoneLogo{
-  display: none;
- }
- .houseLogo{
-  display: none;
- }
- .laptopLogo{
-  display: none;
- }
-     
+.logoss{display: none;
+} 
 }
 
 .footer-section{

@@ -129,7 +129,7 @@ if(region.length>=3){
     if(state=='booked'){
    this.reservedDates.push(dates);
    } 
-   if(state=='stay'){
+   if(state=='stay' && dates.toString()!=""){
     this.staydates.push(dates);
    }
   }

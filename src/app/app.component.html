@@ -1,17 +1,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="app.component.css">
-<script src="menu.js"></script>
 
 <body id="markSec">
-    
   <div class="navbar">
             <h2  class="navbar-logo"  id="logo">Tem<span>liz</span></h2> 
            <img  class="menu-btn" id="menuCta"   src="https://cdn-icons-png.flaticon.com/128/5234/5234126.png" alt="menu">
            <nav>
                <img  class="exit-btn" id="exitCta" src="https://cdn-icons-png.flaticon.com/128/1828/1828778.png"  alt="exit menu">
            <ul class="navbar-menu">
-            <li class="home"><a  class="home" href="#aboutApp">Home</a></li>
+            <li class="home"><a  routerLink="" routerLinkActive="activebutton" class="home" ariaCurrentWhenActive="page">Home</a></li>
             <li><a routerLink="/events" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Events</a></li>
             <li><a routerLink="/commerce"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Ecommerce</a></li>
             <li><a routerLink="/workers"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Worker</a></li>
@@ -32,7 +30,7 @@
       </div>
        <div class="par">
       <P>Welcome to Temliz. Get your websites and webApps done and hosted for you at a very good price.
-        <b>Just send us an Email at <span> <a href="mailto:trezorzote@gmail.com">trezorzote@gmail.com</a></span></b> and let us know what your website should look like.
+        <b>Just send us an Email at <span> <a href="mailto:trezorzote@gmail.com">trezorzote&#64;gmail.com</a></span></b> and let us know what your website should look like.
          Examples of webapps we can make for you can  be found at the <span style="color:chocolate;"> main menu button</span>
          or at the navigation bar.
         <span> What are you waiting for, make your business available worldwide.</span>
@@ -52,7 +50,7 @@
   <div class="cta-text">
       <h6 style="color: rgb(196, 196, 196);">Email 
         <span><a style="text-decoration: none; color:chocolate;"
-          href="mailto:trezorzote@gmail.com">trezorzote@gmail.com</a></span></h6>
+          href="mailto:trezorzote@gmail.com">trezorzote&#64;gmail.com</a></span></h6>
   </div>
   
 <div class="copyright-text">
@@ -62,6 +60,7 @@
 </footer>
 </div>
 
-
+<script src="./menu.js"></script>
+<script src="./home/home.js"></script>
 
 </body>

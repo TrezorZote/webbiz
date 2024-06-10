@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comforter+Brush&family=Monoton&family=Road+Rage&family=Style+Script&family=Vesper+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Laila&family=Neucha&family=Permanent+Marker&family=Strait&display=swap');
 section.marketing {
- background-color: white;
+  background-color: white;
   margin: .5em .5em .5em .5em;
   box-shadow: 0 0 1rem 0 black;
   border-radius: 8px;

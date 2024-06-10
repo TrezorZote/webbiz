@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+.main {
+    min-height: 115vh;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(45deg ,  white 83%,  lightblue 88%, lightseagreen 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: .5em .5em ;
+    box-shadow: 0 0 1rem 0 black;
+    border-radius: 8px;
+  }
+
+  
+  .main .image-container {
+    padding: 30px;
+  }
+  
+  .main .image-container .jarvis {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+  
+  .main .image-container .jarvis img {
+    width: 300px;
+    align-items: center;
+  }
+  
+  
+  .main .image-container h1 {
+    color: #00bcd4;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+  .main .image-container h1 span {
+    color: #192122;
+  }
+  
+  .main .image-container p {
+    color:#192122;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .main .image-container p span {
+    color:chocolate;
+   
+  }
+  
+  .main .press {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    height: 50px;
+    border-radius: 20px;
+    background: lightseagreen;
+  }
+  
+  .main .press .talk {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .main .press .talk i {
+    font-size: 20px;
+    background-color: lightseagreen;
+    color: whitesmoke;
+   
+  }
+  
+  .main .press .content {
+    background-color: lightseagreen;
+    color:white;
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  .radio-container {
+    display: flex;
+    justify-content: center;
+   
+  }
+  .radio-container input {
+    margin-left: 10px;
+  }
+  .radio-container label {
+    margin-top: 5px;
+    margin-left: 3px;
+  }
+  
+
+  @media only screen and (min-width: 705px) {
+ 
+    section.main{
+      background: linear-gradient(45deg ,  white 83%,  lightblue 88%, lightseagreen 98%);
+     }
+    
+  }

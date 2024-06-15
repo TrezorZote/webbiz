@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comforter+Brush&family=Monoton&family=Road+Rage&family=Style+Script&family=Vesper+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Laila&family=Neucha&family=Permanent+Marker&family=Strait&display=swap');
 section.marketing {
-  background: white;
+  background-color: white;
   margin: .5em .5em .5em .5em;
-  box-shadow: 0 0 1rem 0 black;
+  box-shadow: 0 0 1rem 0 gray;
   border-radius: 8px;
 }
 
@@ -13,7 +13,7 @@ section.marketing p  {
   font-family: 'Poppins';
   font-weight: 900;
   font-size: 1.05em;
-  color: rgb(51, 51, 51);
+  color: #455726;
 }
 
 .par{
@@ -25,7 +25,7 @@ section.marketing p  {
 .par h3{
   text-align: center;
  font-weight: bold;
-  color:rgb(176, 134, 27);
+  color:#004343b2;
   font-family: 'Laila', cursive;
 }
 
@@ -41,7 +41,7 @@ h4{
   font-size: 1.3em;
   margin-top: .3em;
   text-align: center;
-  color: rgb(39, 39, 39);
+  color:#556B2F;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
@@ -58,7 +58,7 @@ h4{
   text-align: center;
   padding-left: .5em;
   margin: -2.5em auto 1em -.5em;
-  color: black;
+  color: #004343b2;
   font-size: 1.25em;
   font-family: 'Trebuchet MS';
 }
@@ -74,7 +74,7 @@ h4{
   margin-top: 1em;
   margin-bottom: 0;
   font-weight: bold;
-  color:black ;
+  color:#333333;
   font-family: 'Poppins';
 }
 
@@ -83,7 +83,7 @@ h4{
 }
 
 .mark input{
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid gray;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -94,6 +94,9 @@ h4{
   font-size: 1em;
   font-weight: bold;
 }
+
+
+
 .mark textarea {
   border: none;
   margin-bottom: .3em;
@@ -124,10 +127,10 @@ input[type="file"]{
   box-shadow: 0 .1rem .2rem 0 black;
   cursor: pointer;
   justify-content: center;
-
+transition: background-color 0.5s ease-in-out ;
 }
 .chooseImage:hover {
- background-color: rgba(255, 108, 55, 0.741);
+ background-color: gainsboro;
 }
 .material-icons{
  margin-top: .25em;
@@ -139,51 +142,52 @@ input[type="file"]{
   }
 
 .submit {
-color: black;
+color: whitesmoke;
 cursor: pointer;
 border-radius: 4px;
-box-shadow: 0 .2rem .4rem 0 black ;
+box-shadow: 0 .2rem .4rem 0 grey ;
 border: none;
 width: 4.5em;
 margin:1.5em 2.5em auto .5em ;
-background-color:white;
+background-color:#556B2F;
 font-weight: 600;
 height: 2em;
-
+transition: background-color 0.5s ease-in-out ;
 }
 
 .resetAll {
-  color: black;
+  color: whitesmoke;
   cursor: pointer;
   border-radius: 4px;
-  box-shadow: 0 .2rem .4rem 0 black ;
+  box-shadow: 0 .2rem .4rem 0 gray;
   border: none;
   width: 4.5em;
   margin:1.5em auto auto 2.5em ;
-  background-color:white;
+  background-color:#dc143cd9;
   font-weight: 600;
   height:2em ;
+  transition: background-color 0.5s ease-in-out ;
   }
   
   .submit:hover {
-    background-color: black;
-    color: white;
+    background-color: #483D8B;
+    color: whitesmoke;
     }
     .resetAll:hover {
-      background-color: black;
-      color: white;
+      background-color: #483D8B;
+      color: whitesmoke;
       }
 
 .sell{
-  background-color: darkkhaki;
-  border-radius: 100%;
-  box-shadow: 0 .1rem .5rem 0 white;
-  width: 1.7em;
-  height: 1.7em;
+  background-color: #004343b2;
+  border-radius: 8px;
+  width: 1.6em;
+  height: 1.6em;
   cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
 }
 .sell:hover{
-  background-color: darkorange;
+  background-color: gray;
 
 }
 
@@ -229,9 +233,9 @@ display: grid;
 grid-template-columns: 24% 22% 22% 20% 22% ;
 }
 .clothLogo{
-  background-color: rgb(19, 95, 91);
-  box-shadow: 0 .1rem .3rem 0 rgb(19, 95, 91);
-  border: 2px solid chocolate;
+  background-color: #556B2F;
+  box-shadow: 0 .1rem .3rem 0 gray;
+  border: 2px solid #556B2F;
   border-radius: 100%;
   width: 1.8em;
   height: 1.8em;
@@ -240,9 +244,9 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
 }
 
 .laptopSell{
-  background-color: rgb(19, 95, 91);
-  box-shadow: 0 .1rem .3rem 0 rgb(19, 95, 91);
-  border: 2px solid chocolate;
+  background-color: #556B2F;
+  box-shadow: 0 .1rem .3rem 0 gray;
+  border: 2px solid #556B2F;
   border-radius: 100%;
   width: 1.95em;
   height: 1.95em;
@@ -250,9 +254,9 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
 }
 
 .phoneSell{
-  background-color: rgb(19, 95, 91);
-  box-shadow: 0 .1rem .3rem 0 rgb(19, 95, 91);
-  border: 2px solid chocolate;
+  background-color: #556B2F;
+  box-shadow: 0 .1rem .3rem 0 gray;
+  border: 2px solid #455726;
   border-radius: 100%;
   width: 2em;
   height: 2em;
@@ -261,9 +265,9 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
 
 
 .carLogo{
-  background-color: rgb(19, 95, 91);
-  box-shadow: 0 .1rem .3rem 0 rgb(19, 95, 91);
-  border: 2px solid chocolate;
+  background-color: #556B2F;
+  box-shadow: 0 .1rem .3rem 0 gray;
+  border: 2px solid #455726;
   border-radius: 100%;
   width: 2em;
   height: 2em;
@@ -271,9 +275,9 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
 }
 
 .houseLogo{
-  background-color: rgb(19, 95, 91);
-  box-shadow: 0 .1rem .3rem 0 rgb(19, 95, 91);
-  border: 2px solid chocolate;
+  background-color: #556B2F;
+  box-shadow: 0 .1rem .3rem 0 gray;
+  border: 2px solid #455726;
   border-radius: 100%;
   width: 1.9em;
   height: 1.9em;
@@ -288,13 +292,14 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
   height: 2.5em;
   margin-left: -2.5em;
  border-left: 2px solid gray;
-  color: rgb(32, 32, 32);
-  background: linear-gradient(45deg ,  white 5%,  khaki 20%,darkkhaki 68%);
+  color: whitesmoke;
+ background-color: #004343b2;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  transition: background-color 0.5s ease-in-out;
 }
 .regionFilter:hover{
-  background: linear-gradient(45deg ,  white 10%,  goldenrod 48%);
+  background-color: #483D8B;
   cursor: pointer;
 }
 
@@ -309,7 +314,7 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
     height: 2.75em;
     border: none;
     background-color: whitesmoke;
-    box-shadow: 0 0 .6rem 0 #333333;
+    box-shadow: 0 0 .6rem 0 gray;
     font-family: 'Trebuchet MS';
     font-size: 1.05em;
     text-align: center; 
@@ -323,7 +328,7 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
     height: 2.75em;
     border: none;
     background-color: whitesmoke;
-    box-shadow: 0 0 .6rem 0 #333333;
+    box-shadow: 0 0 .6rem 0 gray;
     font-family: 'Trebuchet MS';
     font-size: 1.05em;
     text-align: center;
@@ -338,10 +343,11 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border-left: 2px solid gray;
-  background: linear-gradient(45deg ,  white 5%,  khaki 20%,darkkhaki 68%);
+ background-color: #004343b2;
+ transition: background-color 0.5s ease-in-out;
  }
  .searchIcon:hover{
-  background: linear-gradient(45deg ,  white 10%,  goldenrod 28%);
+  background-color: #483D8B;
   cursor: pointer;
  }
 
@@ -355,11 +361,11 @@ grid-template-columns: 24% 22% 22% 20% 22% ;
 .item-card-part1{
 margin: .8em auto .4em .20em;
  border-radius: 8px;
- box-shadow: 0 .2rem .4rem 0 black;
+ box-shadow: 0 .2rem .4rem 0 gray;
  width: 98%;
- height: 21.5em;
+ height: 24em;
 display: inline-block;
-background-color: whitesmoke;
+background: linear-gradient(135deg ,  white 80%,  whitesmoke 85%);
 }
 
 .item-rounded-image{
@@ -375,14 +381,14 @@ background-color: whitesmoke;
    font-weight: 600;
    font-size: .85em;
     margin-left: -1.8em;
-    margin-top: .5em;
-    color:black;
+    margin-top: .6em;
+    color:#151414;
     font-family: 'Comfortaa';
     letter-spacing: .07em;
 }
 .it-attributes{
   list-style-type: none;
- 
+  margin-bottom: .3em;
 }
 .call{
   width: 2em;
@@ -395,9 +401,10 @@ background-color: whitesmoke;
 
 .spa{
   font-family: 'comfortaa';
-    color:rgb(10, 66, 63);
+    color:#004343;
   font-size: 1.05em;
   font-weight: bolder;
+  border-bottom: 1px solid #004343;
 }
 
 
@@ -409,12 +416,12 @@ background-color: whitesmoke;
   margin-right: .45em;
   cursor: pointer;
   z-index: 855;
-  background-color:lightslategray;
+  background-color:whitesmoke;
   border-radius: 12px;
-  box-shadow: 0 .1rem .3rem 0 black;
- 
+  box-shadow: 0 .1rem .3rem 0 gray;
+ transition: background-color 0.5s ease-in-out;
 }.deleteItemLogo:hover{
- background-color: gainsboro;
+ background-color: gray;
 }
 
 .postBtn{
@@ -426,7 +433,7 @@ background-color: whitesmoke;
  float: right;
 font-size: 1.6em;
  border: none;
- background-color: chocolate;
+ background-color: #556B2F;
  margin: 0 .5em .5em auto;
  cursor: pointer;
  }
@@ -444,19 +451,20 @@ font-size: 1.6em;
  
      .updateCheck {
       display: block;
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
     border-radius: 4px;
     box-shadow: 0 .1rem .3rem 0 black ;
     width: 4em;
     margin-top: 1.5em;
-    background-color: black;
+    background-color: #dc143cd9;
     border: none;
     margin-left: 1.5em;
+    transition: background-color 0.5s ease-in-out;
     }
     .updateCheck:hover {
-    background-color: white;
-    color: black;
+    background-color: #940f2a;
+    color: whitesmoke;
     
     }
 
@@ -496,11 +504,13 @@ body {
    margin-right: -1em;
    width: 75%;
    float: right;
-   color: rgb(41, 41, 41);
    border: none;
    box-shadow: none;
   }
 
+  .par h3{
+    text-align: center;
+  }
   
   .event{
     width: 145%;
@@ -522,7 +532,7 @@ body {
 @media only screen and (min-width: 1015px) {
 
   section.marketing{
-    background: linear-gradient(45deg ,  white 83%,  rgb(255 233 106) 88%, cyan 108%);
+    background: linear-gradient(45deg ,  white 75%, whitesmoke 80%, gainsboro 90%);
    }
 .cards{ 
   margin-left: 1%;

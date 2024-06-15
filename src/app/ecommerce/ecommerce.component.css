@@ -9,7 +9,7 @@
 section.marketing {
   background: white;
   margin: .5em .5em .5em .5em;
-  box-shadow: 0 0 1rem 0 black;
+  box-shadow: 0 0 1rem 0 gray;
   border-radius: 8px;
   justify-content: center;
 }
@@ -18,7 +18,7 @@ section.marketing p  {
   font-family: 'Poppins';
   font-weight: 900;
   font-size: 1.05em;
-  color: black;
+  color: #333333;
 }
 
 .par{
@@ -30,7 +30,7 @@ section.marketing p  {
 .par h3{
   text-align: center;
  font-weight: bold;
-  color:chocolate;
+  color:#7a8735;
   font-family: 'Laila', cursive;
 }
 
@@ -49,7 +49,7 @@ h4{
   background: white;
   margin: 3em auto 2.5em 0;
   padding: 1em;
-  box-shadow: 0 0 .5rem 0 black;
+  box-shadow: 0 0 .5rem 0 gray;
   width: 100%;
 }
 
@@ -57,7 +57,7 @@ h4{
   text-align: center;
   padding-left: .5em;
   margin: -2.5em auto 1em -.5em;
-  color: black;
+  color: #333333;
   font-size: 1.25em;
   font-family: 'Trebuchet MS';
 }
@@ -68,30 +68,33 @@ h4{
 }
 
 .sell{
-  background-color: chocolate;
+  background-color: #BFAE91;
   border-radius: 100%;
   width: 1.9em;
   height: 1.9em;
   cursor: pointer;
-  border: 2px solid #361500;
+  transition: background-color 0.5s ease-in-out;
 }
 .sell:hover{
-  background-color: orange;
- 
+  background-color: #7e663c;
 }
 .corbeil{
-  background-color: orange;
+  background-color: #BFAE91;
   border-radius: 100%;
   width: 2em;
   height: 2em;
   cursor: pointer;
   text-align: center;
-  border: 2px solid #361500;
+  border: 2px solid white;
+  transition: border 0.5s ease-in-out;
+}
+.corbeil:hover{
+  border: 1px solid #652700a1;
+  background-color: #7e663c;
 }
 .corbSup{
-  color: #361500;
+  color: #333333;
   font-size: 1.3em;
-  
 }
 
 .mark label {
@@ -108,7 +111,7 @@ h4{
 }
 
 .mark input{
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid grey;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -122,7 +125,7 @@ h4{
 .mark textarea {
   border: none;
   margin-bottom: .3em;
-  box-shadow: 0 0 .5rem 0 black;
+  box-shadow: 0 0 .5rem 0 gray;
   border: none;
   border-radius: 4px;
   width: 100%;
@@ -149,10 +152,10 @@ input[type="file"]{
   box-shadow: 0 .1rem .2rem 0 black;
   cursor: pointer;
   justify-content: center;
-
+  transition: background-color 0.5s ease-in-out;
 }
 .chooseImage:hover {
- background-color: rgba(255, 108, 55, 0.741);
+ background-color: #7e663c;
 }
 .material-icons{
  margin-top: .25em;
@@ -164,40 +167,39 @@ input[type="file"]{
   }
 
 .submit {
-color: black;
+color: whitesmoke;
 cursor: pointer;
 border-radius: 4px;
 box-shadow: 0 .2rem .4rem 0 black ;
 border: none;
 width: 4.5em;
 margin:1.5em 2.5em auto .5em ;
-background-color:white;
+background-color:#7e663c;
 font-weight: 600;
 height: 2em;
-
+transition: background-color 0.5s ease-in-out;
 }
 
 .resetAll {
-  color: black;
+  color: whitesmoke;
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 .2rem .4rem 0 black ;
   border: none;
   width: 4.5em;
   margin:1.5em auto auto 2.5em ;
-  background-color:white;
+  background-color:#95102b;
   font-weight: 600;
   height:2em ;
+  transition: background-color 0.5s ease-in-out;
   }
   
 .submit:hover {
-background-color: black;
-color: white;
+background-color: #4a3c23;
 
 }
 .resetAll:hover {
-  background-color: black;
-  color: white;
+  background-color: #5c0a1a;
   
   }
 
@@ -236,7 +238,6 @@ section.contact-right iframe {
 }
 
 .event{
-  
   object-fit: contain;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -249,9 +250,8 @@ grid-template-columns: 23% 22% 22% 22% 22% ;
 }
 .clothLogo{
   background-color: orange;
-  border-radius: 100%;
-  
-  border: 2px solid goldenrod;
+  border-radius: 100%; 
+  border: 2px solid #7a8735;
   width: 1.9em;
   height: 1.9em;
   margin-left: 1em;
@@ -262,7 +262,7 @@ grid-template-columns: 23% 22% 22% 22% 22% ;
   background-color: orange;
   border-radius: 100%;
   
-  border: 2px solid goldenrod;
+  border: 2px solid #7a8735;
   width: 1.8em;
   height: 1.8em;
   margin-top: 2em;
@@ -271,7 +271,7 @@ grid-template-columns: 23% 22% 22% 22% 22% ;
 .phoneSell{
   background-color: orange;
   border-radius: 100%;
-  border: 2px solid goldenrod;
+  border: 2px solid #7a8735;
   width: 2.1em;
   height: 2.1em;
   margin-top: 2em;
@@ -281,7 +281,7 @@ grid-template-columns: 23% 22% 22% 22% 22% ;
   background-color: orange;
   border-radius: 100%;
   
-  border: 2px solid goldenrod;
+  border: 2px solid #7a8735;
   width: 2.1em;
   height: 2.1em;
   margin-top: 2em;
@@ -291,7 +291,7 @@ grid-template-columns: 23% 22% 22% 22% 22% ;
   background-color: orange;
   border-radius: 100%;
   
-  border: 2px solid goldenrod;
+  border: 2px solid #7a8735;
   width: 1.9em;
   height: 1.9em;
   margin-top: 2em;
@@ -307,17 +307,18 @@ grid-template-columns: 23% 22% 22% 22% 22% ;
 }
 .cate{
   width: 5em;
-  background: linear-gradient(45deg ,  whitesmoke 75%,  khaki 80%,chocolate 98%);
-  color: gray;
+ background-color: #7a8735;
+  color: gainsboro;
   border: none;
-  box-shadow: 0 .1rem .4rem 0 #333333;
+  box-shadow: 0 .1rem .4rem 0 gray;
   font-family:'Trebuchet MS' ;
   margin-top: .5em;
-  border-radius: 8px;
+  border-radius: 4px;
+  transition: background-color 0.5s ease-in-out;
 }
 .cate:hover{
-  background: linear-gradient(45deg ,  chocolate 80%,  rgb(216, 135, 77) 85%);
- color: wheat;
+ background-color: #7e663c;
+ color: whitesmoke;
 }
 
 .center{
@@ -331,7 +332,7 @@ grid-template-columns: 23% 22% 22% 22% 22% ;
   height: 2.75em;
   border: none;
   background-color: whitesmoke;
-  box-shadow: 0 0 .6rem 0 #333333;
+  box-shadow: 0 0 .6rem 0 #7e663c;
   font-family: 'Trebuchet MS';
   font-size: 1.05em;
   text-align: center;
@@ -346,13 +347,14 @@ grid-template-columns: 23% 22% 22% 22% 22% ;
   margin-left: -2.7em;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-left: 2px solid rgb(71, 71, 71);
-  background: linear-gradient(45deg ,  white 5%,  khaki 25%, chocolate 98%);
+  border-left: 2px solid #333333;
+ background-color: #7a8735;
+ transition: background-color 0.5s ease-in-out;
  }
 
  .searchIcon:hover{
   border-left: 2px solid black;
-  background-color: gray;
+  background-color: #7e663c;
   cursor: pointer;
  }
 
@@ -380,11 +382,11 @@ grid-template-columns: 23% 22% 22% 22% 22% ;
 .item-card-part1{
 margin: .8em auto .4em .20em;
  border-radius: 8px;
- box-shadow: 0 .3rem .4rem 0 black;
+ box-shadow: 0 .3rem .4rem 0 gray;
  width: 98%;
- height: 23.5em;
+ height: 25.5em;
 display: inline-block;
-background: linear-gradient(135deg ,  whitesmoke 80%,  gainsboro 90%,gray 100% )
+background: linear-gradient(135deg ,  white 80%,  whitesmoke 90%,gainsboro 100% )
 }
 
 .item-rounded-image{
@@ -400,16 +402,21 @@ background: linear-gradient(135deg ,  whitesmoke 80%,  gainsboro 90%,gray 100% )
    font-weight: 600;
    font-size: .85em;
     margin-left: -1.8em;
-    margin-top: .5em;
-    color:black;
+    margin-top: .6em;
+    color:#151414;
     font-family: 'Comfortaa';
     letter-spacing: .07em;
     
 }
 
+
+.it-attributes{
+  margin-bottom: .3em;
+}
 .spa{
   font-family: 'comfortaa';
-    color:rgb(63, 80, 35);
+    color:#7e663c;
+    border-bottom: 1px solid #7e663c;
   font-size: 1.05em;
   font-weight: bolder;
 }
@@ -423,12 +430,12 @@ background: linear-gradient(135deg ,  whitesmoke 80%,  gainsboro 90%,gray 100% )
   margin-right: .45em;
   cursor: pointer;
   z-index: 855;
-  background-color:grey;
+  background-color:#BFAE91;
   border-radius: 12px;
-  box-shadow: 0 .1rem .3rem 0 black;
- 
+  box-shadow: 0 .1rem .3rem 0 gray;
+ transition: background-color 0.5s ease-in-out;
 }.deleteItemLogo:hover{
- background-color: gainsboro;
+ background-color: #7e663c;
 }
 
 .postBtn{
@@ -440,7 +447,7 @@ background: linear-gradient(135deg ,  whitesmoke 80%,  gainsboro 90%,gray 100% )
  float: right;
 font-size: 1.6em;
  border: none;
- background-color: chocolate;
+ background-color: #7e663c;
  margin: 0 .5em .5em auto;
  cursor: pointer;
  }
@@ -458,19 +465,20 @@ font-size: 1.6em;
  
      .updateCheck {
       display: block;
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
     border-radius: 4px;
     box-shadow: 0 .1rem .3rem 0 black ;
     width: 4em;
     margin-top: 1.5em;
-    background-color: black;
+    background-color: #dc143cd9;
     border: none;
     margin-left: 1.5em;
+    transition: background-color 0.5s ease-in-out;
     }
     .updateCheck:hover {
-    background-color: white;
-    color: black;
+    background-color: #95102b;
+    color: whitesmoke;
     
     } 
 
@@ -493,9 +501,6 @@ body {
    }
 }
 
-.cate{
-  color: gray;
-}
 .grid{
   margin-top: -2em;
  display: flex;
@@ -507,7 +512,6 @@ body {
    margin-right: -1em;
    width: 75%;
    float: right;
-   color: rgb(41, 41, 41);
    border: none;
    box-shadow: none;
   }
@@ -524,12 +528,12 @@ body {
         grid-template-columns:50%  50%;
     }
     .item-card-part1{
-      width: 20em;
+      width: 20.5em;
      }
   }
 @media only screen and (min-width: 1015px) {
   section.marketing{
-    background: linear-gradient(45deg ,  white 83%,  khaki 88%, crimson 108%);
+    background: linear-gradient(45deg ,  white 75%,  whitesmoke 85%, gainsboro 90%);
   }
 .cards{ 
   margin-left: 1%;

@@ -2,10 +2,11 @@
 @import'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comforter+Brush&family=Monoton&family=Road+Rage&family=Style+Script&family=Vesper+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Laila&family=Neucha&family=Permanent+Marker&family=Strait&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 section.marketing {
   background-color: white;
   margin: .5em .5em .5em .5em;
-  box-shadow: 0 0 1rem 0 black;
+  box-shadow: 0 0 1rem 0 gray;
   border-radius: 8px;
 }
 
@@ -16,7 +17,7 @@ section.marketing p  {
   font-family: 'Poppins', cursive;
   font-weight: 900;
   font-size: 1.05em;
-  color:#4d4d4d;
+  color:#4B5320;
 }
 
 .par{
@@ -29,9 +30,10 @@ section.marketing p  {
   max-width: 100%;
   text-align: center;
  font-weight: bold;
- color: darkmagenta;
+ color: #4B5320;
   font-family: 'Laila', cursive;
 }
+
 h4{ 
   font-family: 'Poppins';
   font-weight: 700;
@@ -47,7 +49,7 @@ h4{
   background: white;
   margin: 3em auto 2.5em 0;
   padding: 1em;
-  box-shadow: 0 0 .5rem 0 black;
+  box-shadow: 0 0 .5rem 0 gray;
   width: 100%;
 }
 
@@ -55,7 +57,7 @@ h4{
   text-align: center;
   padding-left: .5em;
   margin: -2.5em auto 1em -.5em;
-  color: rgb(55, 84, 10);
+  color: #4B5320;
   font-size: 1.25em;
   font-family: 'Trebuchet MS';
 }
@@ -66,15 +68,15 @@ h4{
 }
 
 .sell{
-  background-color: plum;
-  border-radius: 100%;
-  box-shadow: 0 .1rem .5rem 0 gray;
-  width: 1.7e;
-  height: 1.7em;
+  background: linear-gradient(135deg, #ffa600bb, #a040a0a4);
+  border-radius: 8px;
+  width: 1.5em;
+  height: 1.5em;
   cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
 }
 .sell:hover{
-  background-color: grey;
+  background-color: #8e7100;
 }
 
 
@@ -83,7 +85,7 @@ h4{
   margin-top: 1em;
   margin-bottom: 0;
   font-weight: bold;
-  color:black ;
+  color:#151414;
   font-family: 'Poppins';
 }
 
@@ -92,7 +94,7 @@ h4{
 }
 
 .mark input{
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid grey;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -133,10 +135,10 @@ input[type="file"]{
   box-shadow: 0 .1rem .2rem 0 black;
   cursor: pointer;
   justify-content: center;
-
+transition: background-color 0.5s ease-in-out;
 }
 .chooseImage:hover {
- background-color: rgba(255, 108, 55, 0.741);
+ background-color: gray;
 }
 .material-icons{
  margin-top: .25em;
@@ -148,39 +150,38 @@ input[type="file"]{
   }
 
 .submit {
-color: black;
+color: whitesmoke;
 cursor: pointer;
 border-radius: 4px;
 box-shadow: 0 .2rem .4rem 0 black ;
 border: none;
 width: 4.5em;
 margin:1.5em 2.5em auto .5em ;
-background-color:white;
+background-color:#4B5320;
 font-weight: 600;
 height: 2em;
-
+transition: background-color 0.5s ease-in-out;
 }
 
 .resetAll {
-  color: black;
+  color: whitesmoke;
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 .2rem .4rem 0 black ;
   border: none;
   width: 4.5em;
   margin:1.5em auto auto 2.5em ;
-  background-color:white;
+  background-color:#a6122f;
   font-weight: 600;
   height:2em ;
+  transition: background-color 0.5s ease-in-out;
   }
   
 .submit:hover {
-background-color: black;
-color: white;
+background-color: #2c3113;
 }
 .resetAll:hover {
-  background-color: black;
-  color: white;
+  background-color: #710c21;
   }
 
 section.contact-right h3 {
@@ -216,18 +217,18 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
 }
 .clothLogo{
   border-radius: 100%;
-  border: 2px solid #361500;
-  background-color: #361500;
-  width: 1.8em;
-  height: 1.8em;
+  border: 2px solid #4B5320;
+  background-color: #CCA300;
+  width: 1.85em;
+  height: 1.85em;
   margin-left: .65em;
  margin-top: 2em;
 }
 
 .laptopSell{
   border-radius: 100%;
-  border: 2px solid #361500;
-  background-color: #361500;
+  border: 2px solid #4B5320;
+  background-color: #CCA300;
   width: 1.9em;
   height: 1.9em;
   margin-top: 2em;
@@ -271,21 +272,19 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
   border-bottom: none;
   border-top: none;
    width: 2.4em;
-   height: 2.5em;
+   height: 2.55em;
    margin-left: -2.5em;
-  border-left: 2px solid gray;
-   color: rgb(40, 40, 40);
-   background: linear-gradient(45deg ,  white 5%,plum 20%,  wheat 80%);
+  border-left: 2px solid #151414;
+   color: whitesmoke;
+  background-color: #7a8735;
    border-top-right-radius: 8px;
    border-bottom-right-radius: 8px;
-   
+   transition: background-color 0.5s ease-in-out ;
  }
  .regionFilter:hover{
    border-top-right-radius: 8px;
    border-bottom-right-radius: 8px;
-   border-left: 2px solid black;
-   color: black;
-   background: linear-gradient(45deg ,  white 5%,orchid 20%,  goldenrod 80%);
+   background-color: #4B5320;
  }
 
  .call{
@@ -307,7 +306,7 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
      height: 2.75em;
      border: none;
      background-color: whitesmoke;
-     box-shadow: 0 0 .6rem 0 #333333;
+     box-shadow: 0 0 .6rem 0 gray;
      font-family: 'Trebuchet MS';
      font-size: 1.05em;
      text-align: center; 
@@ -321,7 +320,7 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
   height: 2.75em;
   border: none;
   background-color: whitesmoke;
-  box-shadow: 0 0 .6rem 0 #333333;
+  box-shadow: 0 0 .6rem 0 gray;
   font-family: 'Trebuchet MS';
   font-size: 1.05em;
   text-align: center;
@@ -335,13 +334,13 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
   margin-left: -2.7em;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-left: 2px solid gray;
-  background: linear-gradient(45deg ,  white 5%,plum 20%,  wheat 80%);
+  border-left: 2px solid #151414;
+  background-color: #7a8735;
+  transition: background-color 0.5s ease-in-out;
  }
 
  .searchIcon:hover{
-  border-left: 2px solid black;
-  background-color: gray;
+  background-color: #4B5320;
   cursor: pointer;
  }
 
@@ -355,11 +354,11 @@ grid-template-columns: 22% 22% 22% 22% 22% ;
 .item-card-part1{
 margin: .8em auto .4em .20em;
  border-radius: 8px;
- box-shadow: 0 .3rem .4rem 0 black;
+ box-shadow: 0 .3rem .4rem 0 gray;
  width: 98%;
- height: 23.5em;
+ height: 25.5em;
 display: inline-block;
-background: linear-gradient(135deg ,  whitesmoke 90%,  plum 95%, wheat 100%);
+background: linear-gradient(135deg ,  white 80%,  whitesmoke 85%);
 }
 
 
@@ -387,21 +386,23 @@ background: linear-gradient(135deg ,  whitesmoke 90%,  plum 95%, wheat 100%);
 
 .items-attributes {
     list-style-type: none;
-  font-weight: 600;
-   font-size: .85em;
+    font-weight: 600;
+    font-size: .85em;
     margin-left: -1.8em;
     margin-top: .5em;
-    color:black;
+    color:#151414;
     font-family: 'Comfortaa';
-    letter-spacing: .07em;  
+    letter-spacing: .07em; 
 }
 .it-attributes{
   list-style-type: none;
+  margin-top: .5em;
 }
 
 .spa{
+  border-bottom: 1px solid gray;
   font-family: 'comfortaa';
-    color:rgb(56, 87, 8);
+  color:rgb(56, 87, 8);
   font-size: 1.05em;
   font-weight: bolder;
 }
@@ -415,11 +416,12 @@ background: linear-gradient(135deg ,  whitesmoke 90%,  plum 95%, wheat 100%);
   margin-right: .45em;
   cursor: pointer;
   z-index: 855;
-  background-color:plum;
+  background-color:whitesmoke;
   border-radius: 12px;
+  transition: background-color 0.5s ease-in-out;
  
 }.deleteItemLogo:hover{
- background-color: gainsboro;
+ background-color: gray;
 }
 
 .postBtn{
@@ -449,19 +451,20 @@ font-size: 1.6em;
  
      .updateCheck {
       display: block;
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
     border-radius: 4px;
     box-shadow: 0 .1rem .3rem 0 black ;
     width: 4em;
     margin-top: 1.5em;
-    background-color: black;
+    background-color: #dc143cd9;
     border: none;
     margin-left: 1.5em;
+    transition: background-color 0.5s ease-in-out;
     }
     .updateCheck:hover {
-    background-color: white;
-    color: black;
+    background-color: #a6122f;
+    color: whitesmoke;
     
     }
 
@@ -487,11 +490,10 @@ body {
  justify-content: center;
 }
   section.marketing p{
-    font-size: 110%;
+   font-size: 110%;
    margin-right: -1em;
    width: 75%;
    float: right;
-   color: rgb(25, 25, 25);
    border: none;
    box-shadow: none;
   }
@@ -514,7 +516,8 @@ body {
 @media only screen and (min-width: 1015px) {
  
   section.marketing{
-    background: linear-gradient(45deg ,  white 83%,  plum 88%, orange 98%);
+    background: linear-gradient(45deg ,  white 75%,  whitesmoke 80%,gainsboro 90%);
+   
    }
   .cards{ 
     margin-left: 1%;

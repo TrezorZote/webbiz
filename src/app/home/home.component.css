@@ -1,22 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 .main {
-    min-height: 115vh;
     position: relative;
-    width: 100%;
-    background: linear-gradient(45deg ,  white 83%,  lightblue 88%, lightseagreen 98%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: .5em .5em ;
-    box-shadow: 0 0 1rem 0 black;
+    margin: .5em .5em .5em .5em ;
     border-radius: 8px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem 0 gray;
   }
 
-  
+  /* background: linear-gradient(45deg ,  white 83%,  lightblue 88%, lightseagreen 98%);
+  box-shadow: 0 0 1rem 0 black;
+  */
   .main .image-container {
-    padding: 30px;
+    padding: 40px;
   }
   
   .main .image-container .jarvis {
@@ -45,9 +46,12 @@
   }
   
   .main .image-container p {
-    color:#192122;
-    text-align: center;
-    margin-bottom: 40px;
+    font-family: 'Poppins', cursive;
+   font-weight: 900;
+   font-size: 1em;
+   color:#1d1d1d;
+   margin: 40px auto;
+   text-align: center;
   }
   .main .image-container p span {
     color:chocolate;
@@ -59,10 +63,12 @@
     justify-content: center;
     align-items: center;
     width: 45vw;
-    height: 50px;
-    border-radius: 20px;
-    background: lightseagreen;
+    height: 55px;
+    border-radius: 25px;
+    background: #222222;
+    margin-bottom: 1em;
   }
+
   
   .main .press .talk {
     background: transparent;
@@ -75,21 +81,28 @@
     align-items: center;
     font-size: 15px;
     cursor: pointer;
+    
   }
+
   
   .main .press .talk i {
     font-size: 20px;
-    background-color: lightseagreen;
-    color: whitesmoke;
-   
+    background-color: #222222;
+    color: #8c8c8c;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .main .press .talk i:hover{
+    color: gainsboro;
   }
   
   .main .press .content {
-    background-color: lightseagreen;
-    color:white;
+    background-color: #222222;
+    color:gainsboro;
     font-size: 15px;
     margin-right: 20px;
   }
+
 
   .radio-container {
     display: flex;
@@ -105,10 +118,53 @@
   }
   
 
+  /*
   @media only screen and (min-width: 705px) {
  
-    section.main{
-      background: linear-gradient(45deg ,  white 83%,  lightblue 88%, lightseagreen 98%);
-     }
+   
     
   }
+
+  
+  .section-description {
+    color: #666666;
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button.primary {
+    background-color: #1e88e5;
+    color: #ffffff;
+  }
+  
+  .button.primary:hover {
+    background-color: #1565c0;
+  }
+  
+  .button.secondary {
+    background-color: #ffeb3b;
+    color: #333333;
+  }
+  
+  .button.secondary:hover {
+    background-color: #fdd835;
+  }
+  
+  .section-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+    */

@@ -7,9 +7,9 @@ body{
 }
 
 .frontpage{
-  background: linear-gradient(45deg ,  white 80%,  wheat 85%, plum 95%);
+  background-color: white;
     margin:.5em .5em .5em .5em;
-    box-shadow: 0 0 1rem 0 black;
+    box-shadow: 0 0 1rem 0 gray;
     border-radius: 8px;
     justify-content: center;
 }
@@ -25,14 +25,14 @@ body{
     max-width: 100%;
     text-align: center;
    font-weight: bold;
-    color:chocolate;
+    color:#4B5320;
     font-family: 'Laila', cursive;
   }
   .par p{
     font-family: 'Poppins', cursive;
     font-weight: 900;
     font-size: 1.05em;
-    color:#4d4d4d;
+    color:#151515;
   }
 
   .par span{
@@ -45,7 +45,7 @@ body{
     background: white;
     margin: 3em auto 2.5em 0;
     padding: 1em;
-    box-shadow: 0 0 .5rem 0 black;
+    box-shadow: 0 0 .5rem 0 gray;
     width: 100%;
   }
   
@@ -53,7 +53,7 @@ body{
     text-align: center;
     padding-left: .5em;
     margin: -2.5em auto 1em -.5em;
-    color: #383838;
+    color: #4B5320;
     font-size: 1.25em;
     font-family: 'Trebuchet MS';
   }
@@ -78,7 +78,7 @@ body{
     margin-top: 1em;
     margin-bottom: 0;
     font-weight: bold;
-    color:black;
+    color:#151515;
     font-family: 'Poppins';
   }
   
@@ -87,7 +87,7 @@ body{
   }
   
   .mark input{
-    border-bottom: 3px solid #313131;
+    border-bottom: 3px solid gray;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -101,7 +101,7 @@ body{
   .mark textarea {
     border: none;
     margin-bottom: .3em;
-    box-shadow: 0 0 .5rem 0 black;
+    box-shadow: 0 0 .5rem 0 gray;
     border: none;
     border-radius: 4px;
     width: 100%;
@@ -126,23 +126,61 @@ body{
     }
   
   .submit {
-  color: #a0a0a0;
+  color: whitesmoke;
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 .2rem .4rem 0 black ;
   border: none;
   width: 4.7em;
   margin:1.5em 2.5em auto .5em ;
-  background-color: #333333 ;
+  background-color: #4B5320;
   font-weight: 600;
   height: 2em;
-  
+  transition: background-color 0.5s ease-in-out;
   }
   
     .submit:hover {
-      color: gainsboro;
+      background-color: #353a17;
+      color: white;
       }
       
+      .resetAll {
+        color: whitesmoke;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0 .2rem .4rem 0 black ;
+        border: none;
+        width: 4.7em;
+        margin:1.5em auto auto 2.5em ;
+        background-color:#7e663c;
+        font-weight: 600;
+        height:2em ;
+        transition: background-color 0.5s ease-in-out;
+        }
+        
+      .resetAll:hover {
+        background-color: #5b492b;
+        color: white;
+        }
+        .updateCheck {
+          font-weight: 600;
+        color: whitesmoke;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0 .1rem .3rem 0 black ;
+        width: 4.7em;
+        margin:1.5em auto auto 2.5em ;
+        background-color: #dc143cd9;
+        border: none;
+        height: 2em;
+        transition: background-color 0.5s ease-in-out;
+        }
+        .updateCheck:hover {
+        background-color: #95102b;
+        color: whitesmoke;
+        
+        } 
+    
   
 
       .items-attributes {
@@ -195,7 +233,7 @@ body{
     border-radius: 4px;
     font-family: 'Poppins';
     margin:1em auto 1em auto;
-    box-shadow: 0 0 .5rem 0 black;
+    box-shadow: 0 0 .5rem 0 gray;
     padding: 1em;
 }
 
@@ -300,7 +338,9 @@ body{
     align-items: center;
    justify-content: center;
   }
-
+.frontpage{
+  background: linear-gradient(45deg ,  white 75%,  whitesmoke 85%, gainsboro 90%);
+}
   
 
   .box{
@@ -314,7 +354,7 @@ body{
     }
    
     .par p{
-        font-size: 125%;
+        font-size: 110%;
        max-width: 85%;
        float: right;
        color: #4d4d4d;
